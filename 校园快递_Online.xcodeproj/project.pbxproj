@@ -19,6 +19,8 @@
 		52D02E161CCF019100C63AF8 /* XYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D02E141CCF019100C63AF8 /* XYMainTableViewCell.xib */; };
 		52D02E191CCF06A000C63AF8 /* XYMainTableViewCellITem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E181CCF06A000C63AF8 /* XYMainTableViewCellITem.m */; };
 		52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */; };
+		52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E1F1CCF170100C63AF8 /* XYSendExpressViewController.m */; };
+		52D02E261CCF294900C63AF8 /* XYRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */; };
 		DCE54EA4450B8A1E358EC0FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4581BCE346DFDB5B6488C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,10 @@
 		52D02E1A1CCF084D00C63AF8 /* XYMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainTableViewModel.h; sourceTree = "<group>"; };
 		52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewModel.m; sourceTree = "<group>"; };
 		52D02E1D1CCF106200C63AF8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		52D02E1E1CCF170100C63AF8 /* XYSendExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSendExpressViewController.h; sourceTree = "<group>"; };
+		52D02E1F1CCF170100C63AF8 /* XYSendExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSendExpressViewController.m; sourceTree = "<group>"; };
+		52D02E241CCF294900C63AF8 /* XYRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRegisterViewController.h; sourceTree = "<group>"; };
+		52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRegisterViewController.m; sourceTree = "<group>"; };
 		7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4581BCE346DFDB5B6488C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +202,10 @@
 			children = (
 				52D02E081CCE039500C63AF8 /* XYMainViewController.h */,
 				52D02E091CCE039500C63AF8 /* XYMainViewController.m */,
+				52D02E1E1CCF170100C63AF8 /* XYSendExpressViewController.h */,
+				52D02E1F1CCF170100C63AF8 /* XYSendExpressViewController.m */,
+				52D02E241CCF294900C63AF8 /* XYRegisterViewController.h */,
+				52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -402,8 +412,10 @@
 			files = (
 				52D02E191CCF06A000C63AF8 /* XYMainTableViewCellITem.m in Sources */,
 				525224851CCDFE940039F9F4 /* AppDelegate.m in Sources */,
+				52D02E261CCF294900C63AF8 /* XYRegisterViewController.m in Sources */,
 				52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */,
 				52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */,
+				52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */,
 				525224821CCDFE940039F9F4 /* main.m in Sources */,
 				52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */,
 			);
