@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525224821CCDFE940039F9F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224811CCDFE940039F9F4 /* main.m */; };
+		525224851CCDFE940039F9F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224841CCDFE940039F9F4 /* AppDelegate.m */; };
+		5252248B1CCDFE940039F9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525224891CCDFE940039F9F4 /* Main.storyboard */; };
+		5252248D1CCDFE940039F9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5252248C1CCDFE940039F9F4 /* Assets.xcassets */; };
+		525224901CCDFE940039F9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5252248E1CCDFE940039F9F4 /* LaunchScreen.storyboard */; };
+		5252249B1CCDFE940039F9F4 /* _____OnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252249A1CCDFE940039F9F4 /* _____OnlineTests.m */; };
+		525224A61CCDFE940039F9F4 /* _____OnlineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224A51CCDFE940039F9F4 /* _____OnlineUITests.m */; };
+		52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E091CCE039500C63AF8 /* XYMainViewController.m */; };
+		52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E131CCF019100C63AF8 /* XYMainTableViewCell.m */; };
+		52D02E161CCF019100C63AF8 /* XYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D02E141CCF019100C63AF8 /* XYMainTableViewCell.xib */; };
+		52D02E191CCF06A000C63AF8 /* XYMainTableViewCellITem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E181CCF06A000C63AF8 /* XYMainTableViewCellITem.m */; };
+		52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */; };
+		DCE54EA4450B8A1E358EC0FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4581BCE346DFDB5B6488C8 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525224971CCDFE940039F9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525224751CCDFE940039F9F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5252247C1CCDFE940039F9F4;
+			remoteInfo = "校园快递_Online";
+		};
+		525224A21CCDFE940039F9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525224751CCDFE940039F9F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5252247C1CCDFE940039F9F4;
+			remoteInfo = "校园快递_Online";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5252247D1CCDFE940039F9F4 /* 校园快递_Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "校园快递_Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525224811CCDFE940039F9F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		525224831CCDFE940039F9F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		525224841CCDFE940039F9F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5252248A1CCDFE940039F9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5252248C1CCDFE940039F9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5252248F1CCDFE940039F9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525224911CCDFE940039F9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525224961CCDFE940039F9F4 /* 校园快递_OnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "校园快递_OnlineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5252249A1CCDFE940039F9F4 /* _____OnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____OnlineTests.m"; sourceTree = "<group>"; };
+		5252249C1CCDFE940039F9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525224A11CCDFE940039F9F4 /* 校园快递_OnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "校园快递_OnlineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525224A51CCDFE940039F9F4 /* _____OnlineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____OnlineUITests.m"; sourceTree = "<group>"; };
+		525224A71CCDFE940039F9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D02E081CCE039500C63AF8 /* XYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainViewController.h; sourceTree = "<group>"; };
+		52D02E091CCE039500C63AF8 /* XYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainViewController.m; sourceTree = "<group>"; };
+		52D02E101CCE0EA700C63AF8 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		52D02E121CCF019100C63AF8 /* XYMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainTableViewCell.h; sourceTree = "<group>"; };
+		52D02E131CCF019100C63AF8 /* XYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewCell.m; sourceTree = "<group>"; };
+		52D02E141CCF019100C63AF8 /* XYMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYMainTableViewCell.xib; sourceTree = "<group>"; };
+		52D02E171CCF06A000C63AF8 /* XYMainTableViewCellITem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainTableViewCellITem.h; sourceTree = "<group>"; };
+		52D02E181CCF06A000C63AF8 /* XYMainTableViewCellITem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewCellITem.m; sourceTree = "<group>"; };
+		52D02E1A1CCF084D00C63AF8 /* XYMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainTableViewModel.h; sourceTree = "<group>"; };
+		52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewModel.m; sourceTree = "<group>"; };
+		7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4581BCE346DFDB5B6488C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5252247A1CCDFE940039F9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE54EA4450B8A1E358EC0FC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525224931CCDFE940039F9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252249E1CCDFE940039F9F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525224741CCDFE940039F9F4 = {
+			isa = PBXGroup;
+			children = (
+				52D02E101CCE0EA700C63AF8 /* Reveal.framework */,
+				5252247F1CCDFE940039F9F4 /* 校园快递_Online */,
+				525224991CCDFE940039F9F4 /* 校园快递_OnlineTests */,
+				525224A41CCDFE940039F9F4 /* 校园快递_OnlineUITests */,
+				5252247E1CCDFE940039F9F4 /* Products */,
+				5ADC2E92D05B05DCD0002CEE /* Pods */,
+				DC9006C0D577EA4D684DB818 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5252247E1CCDFE940039F9F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5252247D1CCDFE940039F9F4 /* 校园快递_Online.app */,
+				525224961CCDFE940039F9F4 /* 校园快递_OnlineTests.xctest */,
+				525224A11CCDFE940039F9F4 /* 校园快递_OnlineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5252247F1CCDFE940039F9F4 /* 校园快递_Online */ = {
+			isa = PBXGroup;
+			children = (
+				52D02E011CCE036700C63AF8 /* Items */,
+				52D02E021CCE036700C63AF8 /* Models */,
+				52D02E031CCE036700C63AF8 /* Views */,
+				52D02E041CCE036700C63AF8 /* ViewControllers */,
+				525224831CCDFE940039F9F4 /* AppDelegate.h */,
+				525224841CCDFE940039F9F4 /* AppDelegate.m */,
+				525224891CCDFE940039F9F4 /* Main.storyboard */,
+				5252248C1CCDFE940039F9F4 /* Assets.xcassets */,
+				5252248E1CCDFE940039F9F4 /* LaunchScreen.storyboard */,
+				525224911CCDFE940039F9F4 /* Info.plist */,
+				525224801CCDFE940039F9F4 /* Supporting Files */,
+			);
+			path = "校园快递_Online";
+			sourceTree = "<group>";
+		};
+		525224801CCDFE940039F9F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				525224811CCDFE940039F9F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525224991CCDFE940039F9F4 /* 校园快递_OnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				5252249A1CCDFE940039F9F4 /* _____OnlineTests.m */,
+				5252249C1CCDFE940039F9F4 /* Info.plist */,
+			);
+			path = "校园快递_OnlineTests";
+			sourceTree = "<group>";
+		};
+		525224A41CCDFE940039F9F4 /* 校园快递_OnlineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				525224A51CCDFE940039F9F4 /* _____OnlineUITests.m */,
+				525224A71CCDFE940039F9F4 /* Info.plist */,
+			);
+			path = "校园快递_OnlineUITests";
+			sourceTree = "<group>";
+		};
+		52D02E011CCE036700C63AF8 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				52D02E171CCF06A000C63AF8 /* XYMainTableViewCellITem.h */,
+				52D02E181CCF06A000C63AF8 /* XYMainTableViewCellITem.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		52D02E021CCE036700C63AF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52D02E1A1CCF084D00C63AF8 /* XYMainTableViewModel.h */,
+				52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52D02E031CCE036700C63AF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52D02E121CCF019100C63AF8 /* XYMainTableViewCell.h */,
+				52D02E131CCF019100C63AF8 /* XYMainTableViewCell.m */,
+				52D02E141CCF019100C63AF8 /* XYMainTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52D02E041CCE036700C63AF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52D02E081CCE039500C63AF8 /* XYMainViewController.h */,
+				52D02E091CCE039500C63AF8 /* XYMainViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5ADC2E92D05B05DCD0002CEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */,
+				7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC9006C0D577EA4D684DB818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA4581BCE346DFDB5B6488C8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5252247C1CCDFE940039F9F4 /* 校园快递_Online */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525224AA1CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_Online" */;
+			buildPhases = (
+				27BD5E52992DC8A60BA68341 /* Check Pods Manifest.lock */,
+				525224791CCDFE940039F9F4 /* Sources */,
+				5252247A1CCDFE940039F9F4 /* Frameworks */,
+				5252247B1CCDFE940039F9F4 /* Resources */,
+				39CAB3B598C4B63C358A9C69 /* Embed Pods Frameworks */,
+				65698E4F425682B3B9A7D0D2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "校园快递_Online";
+			productName = "校园快递_Online";
+			productReference = 5252247D1CCDFE940039F9F4 /* 校园快递_Online.app */;
+			productType = "com.apple.product-type.application";
+		};
+		525224951CCDFE940039F9F4 /* 校园快递_OnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525224AD1CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_OnlineTests" */;
+			buildPhases = (
+				525224921CCDFE940039F9F4 /* Sources */,
+				525224931CCDFE940039F9F4 /* Frameworks */,
+				525224941CCDFE940039F9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525224981CCDFE940039F9F4 /* PBXTargetDependency */,
+			);
+			name = "校园快递_OnlineTests";
+			productName = "校园快递_OnlineTests";
+			productReference = 525224961CCDFE940039F9F4 /* 校园快递_OnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		525224A01CCDFE940039F9F4 /* 校园快递_OnlineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525224B01CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_OnlineUITests" */;
+			buildPhases = (
+				5252249D1CCDFE940039F9F4 /* Sources */,
+				5252249E1CCDFE940039F9F4 /* Frameworks */,
+				5252249F1CCDFE940039F9F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525224A31CCDFE940039F9F4 /* PBXTargetDependency */,
+			);
+			name = "校园快递_OnlineUITests";
+			productName = "校园快递_OnlineUITests";
+			productReference = 525224A11CCDFE940039F9F4 /* 校园快递_OnlineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525224751CCDFE940039F9F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					5252247C1CCDFE940039F9F4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					525224951CCDFE940039F9F4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5252247C1CCDFE940039F9F4;
+					};
+					525224A01CCDFE940039F9F4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5252247C1CCDFE940039F9F4;
+					};
+				};
+			};
+			buildConfigurationList = 525224781CCDFE940039F9F4 /* Build configuration list for PBXProject "校园快递_Online" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525224741CCDFE940039F9F4;
+			productRefGroup = 5252247E1CCDFE940039F9F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5252247C1CCDFE940039F9F4 /* 校园快递_Online */,
+				525224951CCDFE940039F9F4 /* 校园快递_OnlineTests */,
+				525224A01CCDFE940039F9F4 /* 校园快递_OnlineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5252247B1CCDFE940039F9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525224901CCDFE940039F9F4 /* LaunchScreen.storyboard in Resources */,
+				52D02E161CCF019100C63AF8 /* XYMainTableViewCell.xib in Resources */,
+				5252248D1CCDFE940039F9F4 /* Assets.xcassets in Resources */,
+				5252248B1CCDFE940039F9F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525224941CCDFE940039F9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252249F1CCDFE940039F9F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27BD5E52992DC8A60BA68341 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39CAB3B598C4B63C358A9C69 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65698E4F425682B3B9A7D0D2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525224791CCDFE940039F9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D02E191CCF06A000C63AF8 /* XYMainTableViewCellITem.m in Sources */,
+				525224851CCDFE940039F9F4 /* AppDelegate.m in Sources */,
+				52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */,
+				52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */,
+				525224821CCDFE940039F9F4 /* main.m in Sources */,
+				52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525224921CCDFE940039F9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252249B1CCDFE940039F9F4 /* _____OnlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252249D1CCDFE940039F9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525224A61CCDFE940039F9F4 /* _____OnlineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525224981CCDFE940039F9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5252247C1CCDFE940039F9F4 /* 校园快递_Online */;
+			targetProxy = 525224971CCDFE940039F9F4 /* PBXContainerItemProxy */;
+		};
+		525224A31CCDFE940039F9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5252247C1CCDFE940039F9F4 /* 校园快递_Online */;
+			targetProxy = 525224A21CCDFE940039F9F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		525224891CCDFE940039F9F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252248A1CCDFE940039F9F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5252248E1CCDFE940039F9F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252248F1CCDFE940039F9F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525224A81CCDFE940039F9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		525224A91CCDFE940039F9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525224AB1CCDFE940039F9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					FRAMEWORK_SEARCH_PATHS,
+					"=",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				INFOPLIST_FILE = "校园快递_Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"KxMenu\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"RESideMenu\"",
+					"-l\"STAlertView\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"UICountingLabel\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----Online";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		525224AC1CCDFE940039F9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					FRAMEWORK_SEARCH_PATHS,
+					"=",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				INFOPLIST_FILE = "校园快递_Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"KxMenu\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"RESideMenu\"",
+					"-l\"STAlertView\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"UICountingLabel\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----Online";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		525224AE1CCDFE940039F9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "校园快递_OnlineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----OnlineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/校园快递_Online.app/校园快递_Online";
+			};
+			name = Debug;
+		};
+		525224AF1CCDFE940039F9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "校园快递_OnlineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----OnlineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/校园快递_Online.app/校园快递_Online";
+			};
+			name = Release;
+		};
+		525224B11CCDFE940039F9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "校园快递_OnlineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----OnlineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "校园快递_Online";
+			};
+			name = Debug;
+		};
+		525224B21CCDFE940039F9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "校园快递_OnlineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----OnlineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "校园快递_Online";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525224781CCDFE940039F9F4 /* Build configuration list for PBXProject "校园快递_Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525224A81CCDFE940039F9F4 /* Debug */,
+				525224A91CCDFE940039F9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525224AA1CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525224AB1CCDFE940039F9F4 /* Debug */,
+				525224AC1CCDFE940039F9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525224AD1CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_OnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525224AE1CCDFE940039F9F4 /* Debug */,
+				525224AF1CCDFE940039F9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525224B01CCDFE940039F9F4 /* Build configuration list for PBXNativeTarget "校园快递_OnlineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525224B11CCDFE940039F9F4 /* Debug */,
+				525224B21CCDFE940039F9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 525224751CCDFE940039F9F4 /* Project object */;
+}

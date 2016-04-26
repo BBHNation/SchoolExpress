@@ -1,0 +1,46 @@
+//
+//  XYMainViewController.m
+//  校园快递_Online
+//
+//  Created by 白彬涵 on 16/4/25.
+//  Copyright © 2016年 Philips. All rights reserved.
+//
+
+#import "XYMainViewController.h"
+#import "XYMainTableViewCell.h"
+
+@interface XYMainViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView *mainTableView;
+
+@end
+
+@implementation XYMainViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setTitle:@"HOME"];
+    self.view.backgroundColor = [UIColor redColor];
+    // Do any additional setup after loading the view.
+}
+
+
+
+- (NSInteger )tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *identifier = @"XYMainTableViewCell";
+    XYMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
+    }
+    return cell;
+}
+
+- (CGFloat )tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
+
+@end
