@@ -9,7 +9,7 @@
 #import "XYMainTableViewModel.h"
 
 @interface XYMainTableViewModel ()
-
+@property (nonatomic, assign) BOOL isRefreshed;
 @property (nonatomic, strong, readwrite) NSMutableArray *tableViewDataArray;
 
 @end
@@ -18,17 +18,24 @@
 @implementation XYMainTableViewModel
 
 - (void)getLatestExpressInfoFromServer{
-    
+    AVQuery *query = [AVQuery queryWithClassName:@"LatestExpressList"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSArray<AVObject *> *expresses = objects;
+        _tableViewDataArray = [NSMutableArray arrayWithArray:expresses];
+        AVObject *object = [_tableViewDataArray lastObject];
+        
+        
+        AVUser *user = object[@"sendUser"];
+        NSLog(@"%@",user.objectId);
+        
+        [self willChangeValueForKey:@"isRefreshed"];
+        [self didChangeValueForKey:@"isRefreshed"];
+    }];
 }
 
 - (void)getMyAcountExpressInfoFromServer{
     
 }
-
-- (void)saveMyExpress{
-    
-}
-
 
 
 @end

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-@class XYMainTableViewCellITem;
 @interface XYMainTableViewCell : UITableViewCell
 
-@property(nonatomic, strong) XYMainTableViewCellITem *cellItem;
+@property (weak, nonatomic) IBOutlet UILabel *startPointLabel;
+@property (weak, nonatomic) IBOutlet UILabel *expressCompanyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tipLabel;
+@property (weak, nonatomic) IBOutlet UILabel *destinationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *userHeadImageView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (nonatomic, strong) AVObject *cellItem;
 
 @end

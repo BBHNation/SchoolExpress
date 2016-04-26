@@ -107,6 +107,15 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="D9a-oR-OYX" id="C7T-mt-Kon"/>
+                <outlet property="destinationLabel" destination="3hG-In-1i9" id="lFc-JI-PMj"/>
+                <outlet property="expressCompanyLabel" destination="uHR-Gm-vEN" id="W8E-U4-6kH"/>
+                <outlet property="startPointLabel" destination="0nL-uq-mwZ" id="4yb-rl-bTz"/>
+                <outlet property="tipLabel" destination="Wau-y3-LlI" id="J8W-hC-6GY"/>
+                <outlet property="userHeadImageView" destination="Xuh-0x-Geb" id="voA-Mh-hx5"/>
+                <outlet property="userNameLabel" destination="b4Q-La-ujq" id="EFN-A1-HSC"/>
+            </connections>
             <point key="canvasLocation" x="424" y="376.5"/>
         </tableViewCell>
     </objects>

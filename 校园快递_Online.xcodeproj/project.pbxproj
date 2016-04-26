@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52342A9F1CCF549D00649B54 /* XYAcceptExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52342A9E1CCF549D00649B54 /* XYAcceptExpressViewController.m */; };
 		525224821CCDFE940039F9F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224811CCDFE940039F9F4 /* main.m */; };
 		525224851CCDFE940039F9F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224841CCDFE940039F9F4 /* AppDelegate.m */; };
 		5252248B1CCDFE940039F9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525224891CCDFE940039F9F4 /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52342A9D1CCF549D00649B54 /* XYAcceptExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAcceptExpressViewController.h; sourceTree = "<group>"; };
+		52342A9E1CCF549D00649B54 /* XYAcceptExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAcceptExpressViewController.m; sourceTree = "<group>"; };
 		5252247D1CCDFE940039F9F4 /* 校园快递_Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "校园快递_Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525224811CCDFE940039F9F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		525224831CCDFE940039F9F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -200,14 +203,40 @@
 		52D02E041CCE036700C63AF8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52D02E271CCF37C700C63AF8 /* Main */,
+				52D02E281CCF37CD00C63AF8 /* Send */,
+				52D02E291CCF37D400C63AF8 /* Register */,
+				52342A9D1CCF549D00649B54 /* XYAcceptExpressViewController.h */,
+				52342A9E1CCF549D00649B54 /* XYAcceptExpressViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52D02E271CCF37C700C63AF8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				52D02E081CCE039500C63AF8 /* XYMainViewController.h */,
 				52D02E091CCE039500C63AF8 /* XYMainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		52D02E281CCF37CD00C63AF8 /* Send */ = {
+			isa = PBXGroup;
+			children = (
 				52D02E1E1CCF170100C63AF8 /* XYSendExpressViewController.h */,
 				52D02E1F1CCF170100C63AF8 /* XYSendExpressViewController.m */,
+			);
+			name = Send;
+			sourceTree = "<group>";
+		};
+		52D02E291CCF37D400C63AF8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
 				52D02E241CCF294900C63AF8 /* XYRegisterViewController.h */,
 				52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */,
 			);
-			path = ViewControllers;
+			name = Register;
 			sourceTree = "<group>";
 		};
 		5ADC2E92D05B05DCD0002CEE /* Pods */ = {
@@ -298,6 +327,7 @@
 				TargetAttributes = {
 					5252247C1CCDFE940039F9F4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SDSK9C46A3;
 					};
 					525224951CCDFE940039F9F4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -415,6 +445,7 @@
 				52D02E261CCF294900C63AF8 /* XYRegisterViewController.m in Sources */,
 				52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */,
 				52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */,
+				52342A9F1CCF549D00649B54 /* XYAcceptExpressViewController.m in Sources */,
 				52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */,
 				525224821CCDFE940039F9F4 /* main.m in Sources */,
 				52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */,
@@ -559,6 +590,8 @@
 			baseConfigurationReference = BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -603,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----Online";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -611,6 +645,8 @@
 			baseConfigurationReference = 7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -655,6 +691,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BBH.-----Online";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

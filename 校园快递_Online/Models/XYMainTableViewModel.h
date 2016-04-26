@@ -14,6 +14,5 @@
 
 - (void)getLatestExpressInfoFromServer;
 - (void)getMyAcountExpressInfoFromServer;
-- (void)saveMyExpress;
 
 @end

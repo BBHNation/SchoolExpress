@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KVOController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KxMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4859FD37398438FB0E192ACB9FC36C6F</key>
+		<key>0D455075DEE7F8C786833365D58493D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5254296D597AB108F68996C4CB6C6FF9</key>
+		<key>1E80D81828B32729F19952B3F0E1C908</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2138018B8BF3F853FB5CB5C5A7323076</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>314CD1F80C6A1692E8D15936ADCD2D9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65E86FC8F874CD855F1291330BDE16D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>674D74E7AF8CB69044F8FC0C19309CC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,22 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC6D811879435D460BDC52E00DBDD523</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D1DD2018154B8EB5A72B72031A81A78B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D2572F8444B997A8ACC5780430FBDE67</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA7D282DE6913E30F61E9A8E3CAC2126</key>
+		<key>FEB8F884FB14BAE58D281388F6FA5861</key>
 		<dict>
 			<key>primary</key>
 			<true/>

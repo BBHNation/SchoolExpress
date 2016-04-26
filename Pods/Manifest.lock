@@ -19,6 +19,7 @@ PODS:
     - AVOSCloud
   - AVOSCloudIM (3.2.8):
     - AVOSCloud
+  - KVOController (1.1.0)
   - KxMenu (1)
   - Masonry (1.0.0)
   - MJRefresh (3.1.0)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - AVOSCloud
   - AVOSCloudCrashReporting
   - AVOSCloudIM
+  - KVOController
   - KxMenu
   - Masonry
   - MJRefresh
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   AVOSCloud: b789619942a4275e615f8f0782e7475675951b95
   AVOSCloudCrashReporting: 2dddc7dfc8ef423492a01c0076b3e97716854701
   AVOSCloudIM: d2f6a13d64f9676a43e4d68b822bd1be3f96fb76
+  KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
