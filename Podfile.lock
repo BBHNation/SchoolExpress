@@ -14,6 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AVOSCloud (3.2.8)
+  - AVOSCloudCrashReporting (3.2.8):
+    - AVOSCloud
+  - AVOSCloudIM (3.2.8):
+    - AVOSCloud
   - KxMenu (1)
   - Masonry (1.0.0)
   - MJRefresh (3.1.0)
@@ -24,6 +29,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
   - KxMenu
   - Masonry
   - MJRefresh
@@ -34,6 +42,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AVOSCloud: b789619942a4275e615f8f0782e7475675951b95
+  AVOSCloudCrashReporting: 2dddc7dfc8ef423492a01c0076b3e97716854701
+  AVOSCloudIM: d2f6a13d64f9676a43e4d68b822bd1be3f96fb76
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4

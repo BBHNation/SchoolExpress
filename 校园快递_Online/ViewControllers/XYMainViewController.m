@@ -9,6 +9,7 @@
 #import "XYMainViewController.h"
 #import "XYMainTableViewCell.h"
 
+
 @interface XYMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView *mainTableView;
 
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"HOME"];
+    
     self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }

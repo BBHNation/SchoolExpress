@@ -64,6 +64,7 @@
 		52D02E181CCF06A000C63AF8 /* XYMainTableViewCellITem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewCellITem.m; sourceTree = "<group>"; };
 		52D02E1A1CCF084D00C63AF8 /* XYMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainTableViewModel.h; sourceTree = "<group>"; };
 		52D02E1B1CCF084D00C63AF8 /* XYMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainTableViewModel.m; sourceTree = "<group>"; };
+		52D02E1D1CCF106200C63AF8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4581BCE346DFDB5B6488C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +99,6 @@
 		525224741CCDFE940039F9F4 = {
 			isa = PBXGroup;
 			children = (
-				52D02E101CCE0EA700C63AF8 /* Reveal.framework */,
 				5252247F1CCDFE940039F9F4 /* 校园快递_Online */,
 				525224991CCDFE940039F9F4 /* 校园快递_OnlineTests */,
 				525224A41CCDFE940039F9F4 /* 校园快递_OnlineUITests */,
@@ -140,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				525224811CCDFE940039F9F4 /* main.m */,
+				52D02E1D1CCF106200C63AF8 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,6 +212,7 @@
 		DC9006C0D577EA4D684DB818 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52D02E101CCE0EA700C63AF8 /* Reveal.framework */,
 				DA4581BCE346DFDB5B6488C8 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -553,6 +555,8 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/校园快递_Online/PrefixHeader.pch";
 				INFOPLIST_FILE = "校园快递_Online/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -603,6 +607,8 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/校园快递_Online/PrefixHeader.pch";
 				INFOPLIST_FILE = "校园快递_Online/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

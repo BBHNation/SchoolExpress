@@ -13,7 +13,7 @@
 @property (nonatomic, strong, readonly) NSMutableArray *tableViewDataArray;
 
 - (void)getLatestExpressInfoFromServer;
-    
 - (void)getMyAcountExpressInfoFromServer;
+- (void)saveMyExpress;
 
 @end
