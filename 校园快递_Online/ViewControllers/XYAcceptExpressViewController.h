@@ -10,4 +10,6 @@
 
 @interface XYAcceptExpressViewController : UITableViewController
 
+@property (nonatomic, strong) AVObject *cellItem;
+
 @end

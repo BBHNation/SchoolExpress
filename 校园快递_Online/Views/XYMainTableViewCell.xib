@@ -12,16 +12,9 @@
             <rect key="frame" x="0.0" y="0.0" width="588" height="113"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="588" height="113"/>
+                <rect key="frame" x="0.0" y="0.0" width="588" height="112.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-0x-Geb">
-                        <rect key="frame" x="20" y="13" width="87" height="87"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="87" id="XK6-fx-lxY"/>
-                            <constraint firstAttribute="height" constant="87" id="glP-Xi-fAr"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Q-La-ujq">
                         <rect key="frame" x="124" y="46" width="141" height="21"/>
                         <constraints>
@@ -82,22 +75,35 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-0x-Geb">
+                        <rect key="frame" x="20" y="13" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="XK6-fx-lxY"/>
+                            <constraint firstAttribute="height" constant="88" id="glP-Xi-fAr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="44"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.99368876142602247" blue="0.64381860020774484" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="Wau-y3-LlI" firstAttribute="top" secondItem="0nL-uq-mwZ" secondAttribute="top" id="0Ve-T6-hON"/>
-                    <constraint firstItem="b4Q-La-ujq" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="17" id="36a-cN-rd7"/>
+                    <constraint firstItem="b4Q-La-ujq" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="16" id="36a-cN-rd7"/>
                     <constraint firstItem="D9a-oR-OYX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4vx-wR-fyj"/>
                     <constraint firstAttribute="bottomMargin" secondItem="D9a-oR-OYX" secondAttribute="bottom" constant="-8" id="4zx-b6-I8d"/>
                     <constraint firstItem="3hG-In-1i9" firstAttribute="centerY" secondItem="b4Q-La-ujq" secondAttribute="centerY" constant="11" id="6RR-o9-5a7"/>
-                    <constraint firstItem="0nL-uq-mwZ" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="17" id="8WZ-mF-mBd"/>
+                    <constraint firstItem="0nL-uq-mwZ" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="16" id="8WZ-mF-mBd"/>
                     <constraint firstItem="Xuh-0x-Geb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="8pg-x9-rX2"/>
                     <constraint firstItem="0nL-uq-mwZ" firstAttribute="top" secondItem="Xuh-0x-Geb" secondAttribute="top" id="Tro-NA-20o"/>
-                    <constraint firstItem="uHR-Gm-vEN" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="17" id="V1d-cM-oHd"/>
+                    <constraint firstItem="uHR-Gm-vEN" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="16" id="V1d-cM-oHd"/>
                     <constraint firstItem="Wau-y3-LlI" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="jXS-Mn-x8J"/>
                     <constraint firstItem="Xuh-0x-Geb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nWe-5V-rBI"/>
                     <constraint firstItem="3hG-In-1i9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qku-RE-fhn"/>
-                    <constraint firstItem="uHR-Gm-vEN" firstAttribute="bottom" secondItem="Xuh-0x-Geb" secondAttribute="bottom" id="qoD-RG-SsY"/>
+                    <constraint firstItem="uHR-Gm-vEN" firstAttribute="bottom" secondItem="Xuh-0x-Geb" secondAttribute="bottom" constant="-1" id="qoD-RG-SsY"/>
                     <constraint firstItem="3hG-In-1i9" firstAttribute="bottom" secondItem="uHR-Gm-vEN" secondAttribute="bottom" id="rwK-YN-VCO"/>
                     <constraint firstItem="b4Q-La-ujq" firstAttribute="centerY" secondItem="Xuh-0x-Geb" secondAttribute="centerY" id="zxK-ZZ-OMY"/>
                 </constraints>

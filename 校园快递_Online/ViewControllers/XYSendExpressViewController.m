@@ -49,23 +49,6 @@
                 NSLog(@"faild");
             }
         }];
-        
-        /*
-        AVQuery *query = [AVQuery queryWithClassName:@"_User"];
-        [query getObjectInBackgroundWithId:[[NSUserDefaults standardUserDefaults] objectForKey:@"userId"] block:^(AVObject *object, NSError *error) {
-            AVUser *user = (AVUser *)object;
-            
-            
-            [SendExpressList saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                if (succeeded) {
-                    NSLog(@"succedede");
-                }
-                else{
-                    NSLog(@"error %@",error);
-                }
-            }];
-        }];
-         */
     }
 }
 

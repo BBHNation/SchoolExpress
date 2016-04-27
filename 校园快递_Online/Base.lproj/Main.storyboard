@@ -297,6 +297,9 @@
                                                     <integer key="value" value="50"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                    <integer key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
@@ -349,6 +352,7 @@
                     <connections>
                         <outlet property="mainTableView" destination="rgM-ib-0nA" id="lPz-SS-7Fh"/>
                         <outlet property="userHeadImageView" destination="LSh-CW-hpW" id="LaK-bX-EpK"/>
+                        <outlet property="userNameLabel" destination="YLv-c8-qvg" id="SA6-Ev-SE1"/>
                         <segue destination="uKO-Ct-8P8" kind="push" identifier="SendExpress" id="2Bb-7W-q5u"/>
                         <segue destination="xhb-16-Fvf" kind="push" identifier="AcceptExpressBefor" id="Ild-Fz-ILG"/>
                     </connections>
@@ -385,7 +389,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-fV-zw6">
-                                <rect key="frame" x="113" y="347" width="94" height="29"/>
+                                <rect key="frame" x="180" y="294" width="94" height="29"/>
                                 <color key="tintColor" red="0.78097331279563775" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="changeTipValue:" destination="uKO-Ct-8P8" eventType="valueChanged" id="kIn-UI-fXL"/>
@@ -403,8 +407,8 @@
                                     <action selector="sendAction:" destination="uKO-Ct-8P8" eventType="touchUpInside" id="o21-Qs-TCX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-a8-FYP">
-                                <rect key="frame" x="139" y="297" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-a8-FYP">
+                                <rect key="frame" x="72" y="298" width="20" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -412,10 +416,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cKM-a8-FYP" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="2ko-jN-SNz"/>
-                            <constraint firstItem="FBj-fV-zw6" firstAttribute="centerY" secondItem="Mrc-M4-Psd" secondAttribute="centerY" constant="77.5" id="9Jr-qk-fw0"/>
+                            <constraint firstItem="cKM-a8-FYP" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" constant="-78" id="2ko-jN-SNz"/>
+                            <constraint firstItem="FBj-fV-zw6" firstAttribute="centerY" secondItem="Mrc-M4-Psd" secondAttribute="centerY" constant="24.5" id="9Jr-qk-fw0"/>
                             <constraint firstAttribute="trailing" secondItem="Dwe-BI-gk8" secondAttribute="trailing" constant="61" id="BWd-b3-P2K"/>
-                            <constraint firstItem="cNU-fi-0Lp" firstAttribute="top" secondItem="FBj-fV-zw6" secondAttribute="bottom" constant="44" id="CqR-jX-UFo"/>
+                            <constraint firstItem="cNU-fi-0Lp" firstAttribute="top" secondItem="FBj-fV-zw6" secondAttribute="bottom" constant="97" id="CqR-jX-UFo"/>
                             <constraint firstItem="Dwe-BI-gk8" firstAttribute="leading" secondItem="Mrc-M4-Psd" secondAttribute="leading" constant="61" id="HZB-T2-OIT"/>
                             <constraint firstAttribute="trailing" secondItem="5Km-YL-EWJ" secondAttribute="trailing" constant="61" id="KVE-Mn-RnM"/>
                             <constraint firstItem="Dwe-BI-gk8" firstAttribute="top" secondItem="VBb-iD-2dx" secondAttribute="bottom" constant="28" id="KZ7-GM-mkw"/>
@@ -423,9 +427,9 @@
                             <constraint firstItem="Dwe-BI-gk8" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="NWr-30-I3A"/>
                             <constraint firstItem="cNU-fi-0Lp" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="Olh-NT-rH2"/>
                             <constraint firstItem="5Km-YL-EWJ" firstAttribute="top" secondItem="Kqa-t0-kd5" secondAttribute="bottom" constant="60" id="Rkc-J6-IRY"/>
-                            <constraint firstItem="cKM-a8-FYP" firstAttribute="centerY" secondItem="Mrc-M4-Psd" secondAttribute="centerY" constant="23.5" id="UpK-Wt-LAx"/>
+                            <constraint firstItem="cKM-a8-FYP" firstAttribute="centerY" secondItem="Mrc-M4-Psd" secondAttribute="centerY" constant="24.5" id="UpK-Wt-LAx"/>
                             <constraint firstItem="5Km-YL-EWJ" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="c4r-Rl-50Z"/>
-                            <constraint firstItem="FBj-fV-zw6" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="dkY-vk-kvs"/>
+                            <constraint firstItem="FBj-fV-zw6" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" constant="67" id="dkY-vk-kvs"/>
                             <constraint firstItem="VBb-iD-2dx" firstAttribute="top" secondItem="5Km-YL-EWJ" secondAttribute="bottom" constant="29" id="hQu-dc-S8x"/>
                             <constraint firstItem="VBb-iD-2dx" firstAttribute="leading" secondItem="Mrc-M4-Psd" secondAttribute="leading" constant="61" id="hWi-Pv-nnP"/>
                             <constraint firstItem="VBb-iD-2dx" firstAttribute="centerX" secondItem="Mrc-M4-Psd" secondAttribute="centerX" id="kKQ-in-uKM"/>
@@ -445,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f89-f2-Gjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="-1065"/>
+            <point key="canvasLocation" x="1094" y="-1065"/>
         </scene>
         <!--Accept Express View Controller-->
         <scene sceneID="day-fg-97g">
@@ -484,11 +488,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kOK-G4-ZTq" firstAttribute="bottom" secondItem="jJc-62-DwH" secondAttribute="bottomMargin" id="QUn-By-b6A"/>
-                                                <constraint firstItem="okS-jZ-9lz" firstAttribute="leading" secondItem="kOK-G4-ZTq" secondAttribute="trailing" constant="24" id="W3C-ax-mL9"/>
-                                                <constraint firstItem="kOK-G4-ZTq" firstAttribute="top" secondItem="jJc-62-DwH" secondAttribute="topMargin" id="gYl-kI-xWn"/>
-                                                <constraint firstItem="okS-jZ-9lz" firstAttribute="centerY" secondItem="jJc-62-DwH" secondAttribute="centerY" id="i1H-4B-QmV"/>
-                                                <constraint firstItem="kOK-G4-ZTq" firstAttribute="leading" secondItem="jJc-62-DwH" secondAttribute="leadingMargin" constant="7" id="nRI-pc-nEc"/>
+                                                <constraint firstItem="okS-jZ-9lz" firstAttribute="centerY" secondItem="jJc-62-DwH" secondAttribute="centerY" id="0KY-hg-zOI"/>
+                                                <constraint firstItem="kOK-G4-ZTq" firstAttribute="centerY" secondItem="jJc-62-DwH" secondAttribute="centerY" id="Pa4-Nd-oYu"/>
+                                                <constraint firstItem="kOK-G4-ZTq" firstAttribute="leading" secondItem="jJc-62-DwH" secondAttribute="leadingMargin" constant="7" id="e0B-CY-8Ta"/>
+                                                <constraint firstItem="okS-jZ-9lz" firstAttribute="leading" secondItem="kOK-G4-ZTq" secondAttribute="trailing" constant="24" id="gE8-5m-PqT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -685,6 +688,9 @@
                                                     <rect key="frame" x="52" y="28" width="215" height="30"/>
                                                     <color key="backgroundColor" red="0.30386860144085737" green="0.95977628125942638" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="确认接单"/>
+                                                    <connections>
+                                                        <action selector="acceptAction:" destination="xhb-16-Fvf" eventType="touchUpInside" id="yb7-gC-Yqs"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.30386860144085737" green="0.95977628125942638" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -709,6 +715,13 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="destination" destination="Wos-hB-jg5" id="kpW-DW-DzC"/>
+                        <outlet property="expressCompany" destination="1vq-nZ-tl0" id="BAR-C9-mjd"/>
+                        <outlet property="otherInfo" destination="XcD-Ha-2yZ" id="jxl-pu-Skj"/>
+                        <outlet property="startPoint" destination="UJd-jv-S5e" id="DIW-nu-UDe"/>
+                        <outlet property="thingType" destination="dCp-fu-hVg" id="cMK-jW-wRD"/>
+                        <outlet property="tip" destination="Ewz-WC-DuL" id="exZ-cD-mEP"/>
+                        <outlet property="userHeadImage" destination="kOK-G4-ZTq" id="i01-rs-sjb"/>
                         <outlet property="userNameLabel" destination="okS-jZ-9lz" id="7GQ-oI-gv4"/>
                     </connections>
                 </tableViewController>

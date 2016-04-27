@@ -9,11 +9,12 @@
 #import "XYMainViewController.h"
 #import "XYMainTableViewCell.h"
 #import "XYMainTableViewModel.h"
-
+#import "XYAcceptExpressViewController.h"
 
 @interface XYMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *userHeadImageView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (nonatomic, weak) IBOutlet UITableView *mainTableView;
 @property (nonatomic, strong) XYMainTableViewModel *tableViewModel;
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
@@ -44,12 +45,12 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-//    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil];
     [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         NSLog(@"ERROR is %@",error);
     }];
+    _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:0.8].CGColor;
     
-    
+    [_userNameLabel setText:[AVUser currentUser].username];
 }
 
 
@@ -69,7 +70,7 @@
     }
 }
 
-
+#pragma mark UITableViewDelegate & UITableViewDataSource
 - (NSInteger )tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _tableViewDataArray.count;
 }
@@ -94,5 +95,17 @@
     [self performSegueWithIdentifier:@"AcceptExpressBefor" sender:_tableViewDataArray[indexPath.row]];
     self.hidesBottomBarWhenPushed = NO;
 }
+
+#pragma mark prepareForSegue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"AcceptExpressBefor"]) {
+        XYAcceptExpressViewController *destinationVC = segue.destinationViewController;
+        destinationVC.cellItem = (AVObject *)sender;
+    }
+}
+
+
+
+
 
 @end

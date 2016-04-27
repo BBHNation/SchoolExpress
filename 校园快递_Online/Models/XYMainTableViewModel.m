@@ -20,11 +20,16 @@
 - (void)getLatestExpressInfoFromServer{
     AVQuery *query = [AVQuery queryWithClassName:@"LatestExpressList"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        NSArray<AVObject *> *expresses = objects;
+        NSMutableArray<AVObject *> *expresses = [NSMutableArray new];
+        for (int i=0; i<objects.count; i++) {
+            AVObject *object = objects[i];
+            if (![object[@"isAccepted"] boolValue]) {
+                [expresses addObject:object];
+            }
+        }
+        
         _tableViewDataArray = [NSMutableArray arrayWithArray:expresses];
         AVObject *object = [_tableViewDataArray lastObject];
-        
-        
         AVUser *user = object[@"sendUser"];
         NSLog(@"%@",user.objectId);
         
