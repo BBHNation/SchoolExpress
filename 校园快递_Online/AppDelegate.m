@@ -18,6 +18,7 @@
     [AVOSCloud setApplicationId:@"2CKMuMXXiWLYa3zsBN2dHebc-gzGzoHsz"
                       clientKey:@"mwWVBt0rMY2gUnS5QdYrhbO9"];
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     return YES;
 }
 

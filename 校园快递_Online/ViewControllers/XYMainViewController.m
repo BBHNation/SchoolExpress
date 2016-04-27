@@ -30,16 +30,19 @@
     _tableViewModel = [XYMainTableViewModel new];
     _tableViewDataArray = [NSMutableArray new];
     
+    //下拉加载
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [_tableViewModel getLatestExpressInfoFromServer];
     }];
+    
+    //设置监听
     __weak typeof(self) weakSelf = self;
     [self.KVOController observe:_tableViewModel keyPath:@"isRefreshed" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         [weakSelf.mainTableView.mj_header endRefreshing];
         weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:weakSelf.tableViewModel.tableViewDataArray];
         [weakSelf.mainTableView reloadData];
     }];
-    
+    //开始加载
     [_tableViewModel getLatestExpressInfoFromServer];
     
 }
@@ -53,11 +56,20 @@
     [_userNameLabel setText:[AVUser currentUser].username];
 }
 
+- (IBAction)GotoMySendedExpressAction:(id)sender {
+    if (![AVUser currentUser]) {
+       [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
+    }
+    else{
+        self.hidesBottomBarWhenPushed = YES;
+        [self performSegueWithIdentifier:@"MySendedExpress" sender:self];
+        self.hidesBottomBarWhenPushed = NO;
+    }
+}
 
 
 - (IBAction)SendMyEcpressAction:(id)sender {
     if (![AVUser currentUser]) {
-        
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
     else{

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYMainViewController.m"
-            timestampString = "483416386.043051"
+            timestampString = "483429170.353204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYMainViewController.m"
-            timestampString = "483418416.007627"
+            timestampString = "483429170.353204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
