@@ -24,6 +24,9 @@ PODS:
   - Masonry (1.0.0)
   - MJRefresh (3.1.0)
   - RESideMenu (4.0.7)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - STAlertView (1.0.0)
   - SVProgressHUD (2.0.3)
   - UICountingLabel (1.4.0)
@@ -38,6 +41,7 @@ DEPENDENCIES:
   - Masonry
   - MJRefresh
   - RESideMenu
+  - SDWebImage
   - STAlertView
   - SVProgressHUD
   - UICountingLabel
@@ -52,6 +56,7 @@ SPEC CHECKSUMS:
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b

@@ -94,11 +94,18 @@
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crb-WT-CAf">
                                 <rect key="frame" x="110" y="95" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.26952324116844384" green="0.99217729331841265" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1IY-xD-h2F"/>
                                     <constraint firstAttribute="width" constant="100" id="CP4-px-nuy"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="1b2-gg-0Pu" appends="YES" id="rP8-8J-3km"/>
                                 </connections>
@@ -131,7 +138,7 @@
                     <connections>
                         <outlet property="passwordAgainFeild" destination="rjY-Au-rXL" id="3E5-4z-alV"/>
                         <outlet property="passwordTextFeild" destination="HXU-KI-TpU" id="NHq-rq-46E"/>
-                        <outlet property="userHeadImageView" destination="crb-WT-CAf" id="ifl-pc-gup"/>
+                        <outlet property="userHeadImageView" destination="crb-WT-CAf" id="gHV-ZK-QSX"/>
                         <outlet property="userNameTextFeild" destination="brB-Rx-hAM" id="vS1-dh-M3C"/>
                     </connections>
                 </viewController>
@@ -206,14 +213,6 @@
                                                 <constraint firstAttribute="height" constant="79" id="NUU-61-snr"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-CW-hpW">
-                                            <rect key="frame" x="111" y="27" width="98" height="98"/>
-                                            <color key="backgroundColor" red="0.340540681090307" green="0.63541812801375364" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="98" id="1Yf-IV-S4W"/>
-                                                <constraint firstAttribute="width" constant="98" id="aYf-Hq-Aze"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-c8-qvg">
                                             <rect key="frame" x="139" y="133" width="42" height="13"/>
                                             <constraints>
@@ -286,16 +285,30 @@
                                                 <action selector="SendMyEcpressAction:" destination="c4f-dx-XB7" eventType="touchUpInside" id="Bhj-HP-lmj"/>
                                             </connections>
                                         </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-CW-hpW">
+                                            <rect key="frame" x="110" y="25" width="100" height="100"/>
+                                            <color key="backgroundColor" red="0.340540681090307" green="0.63541812801375364" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="1Yf-IV-S4W"/>
+                                                <constraint firstAttribute="width" constant="100" id="aYf-Hq-Aze"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.10980392156862745" green="0.20000000000000001" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="lQD-Y9-sBD" firstAttribute="leading" secondItem="GBz-Zf-ia7" secondAttribute="trailing" constant="8" id="1qa-NL-zR1"/>
                                         <constraint firstItem="lQD-Y9-sBD" firstAttribute="centerY" secondItem="GBz-Zf-ia7" secondAttribute="centerY" id="5bF-kJ-lFF"/>
-                                        <constraint firstItem="GBz-Zf-ia7" firstAttribute="trailing" secondItem="LSh-CW-hpW" secondAttribute="trailing" constant="5" id="5k6-xm-1WT"/>
+                                        <constraint firstItem="GBz-Zf-ia7" firstAttribute="trailing" secondItem="LSh-CW-hpW" secondAttribute="trailing" constant="4" id="5k6-xm-1WT"/>
                                         <constraint firstItem="YLv-c8-qvg" firstAttribute="top" secondItem="LSh-CW-hpW" secondAttribute="bottom" constant="8" id="8s4-Bj-abo"/>
                                         <constraint firstAttribute="bottom" secondItem="DRJ-de-DGH" secondAttribute="bottom" constant="2" id="90r-i1-WCg"/>
                                         <constraint firstAttribute="trailing" secondItem="YLv-c8-qvg" secondAttribute="trailing" constant="139" id="AoF-mV-VSW"/>
-                                        <constraint firstItem="oc2-JV-aD0" firstAttribute="leading" secondItem="LSh-CW-hpW" secondAttribute="leading" constant="-4" id="Asu-1B-ZNv"/>
+                                        <constraint firstItem="oc2-JV-aD0" firstAttribute="leading" secondItem="LSh-CW-hpW" secondAttribute="leading" constant="-3" id="Asu-1B-ZNv"/>
                                         <constraint firstItem="Jn7-Jh-Cfe" firstAttribute="top" secondItem="47a-aY-bSs" secondAttribute="top" constant="301" id="ED9-gR-BMa"/>
                                         <constraint firstItem="DRJ-de-DGH" firstAttribute="centerX" secondItem="47a-aY-bSs" secondAttribute="centerX" id="Kcm-5L-lqg"/>
                                         <constraint firstItem="LSh-CW-hpW" firstAttribute="centerY" secondItem="8M0-QG-HsX" secondAttribute="centerY" constant="36" id="OfE-ej-KSe"/>
@@ -335,6 +348,7 @@
                     <navigationItem key="navigationItem" title="Main" id="wAF-i3-A85"/>
                     <connections>
                         <outlet property="mainTableView" destination="rgM-ib-0nA" id="lPz-SS-7Fh"/>
+                        <outlet property="userHeadImageView" destination="LSh-CW-hpW" id="LaK-bX-EpK"/>
                         <segue destination="uKO-Ct-8P8" kind="push" identifier="SendExpress" id="2Bb-7W-q5u"/>
                         <segue destination="xhb-16-Fvf" kind="push" identifier="AcceptExpressBefor" id="Ild-Fz-ILG"/>
                     </connections>

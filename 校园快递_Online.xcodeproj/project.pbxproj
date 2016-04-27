@@ -102,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52342AA01CCF642100649B54 /* Accept */ = {
+			isa = PBXGroup;
+			children = (
+				52342A9D1CCF549D00649B54 /* XYAcceptExpressViewController.h */,
+				52342A9E1CCF549D00649B54 /* XYAcceptExpressViewController.m */,
+			);
+			name = Accept;
+			sourceTree = "<group>";
+		};
+		52342AA11CD0551300649B54 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 		525224741CCDFE940039F9F4 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +127,7 @@
 				5252247E1CCDFE940039F9F4 /* Products */,
 				5ADC2E92D05B05DCD0002CEE /* Pods */,
 				DC9006C0D577EA4D684DB818 /* Frameworks */,
+				52342AA11CD0551300649B54 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,8 +218,7 @@
 				52D02E271CCF37C700C63AF8 /* Main */,
 				52D02E281CCF37CD00C63AF8 /* Send */,
 				52D02E291CCF37D400C63AF8 /* Register */,
-				52342A9D1CCF549D00649B54 /* XYAcceptExpressViewController.h */,
-				52342A9E1CCF549D00649B54 /* XYAcceptExpressViewController.m */,
+				52342AA01CCF642100649B54 /* Accept */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

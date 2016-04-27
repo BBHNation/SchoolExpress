@@ -13,6 +13,7 @@
 
 @interface XYMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIImageView *userHeadImageView;
 @property (nonatomic, weak) IBOutlet UITableView *mainTableView;
 @property (nonatomic, strong) XYMainTableViewModel *tableViewModel;
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
@@ -39,6 +40,16 @@
     }];
     
     [_tableViewModel getLatestExpressInfoFromServer];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+//    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil];
+    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        NSLog(@"ERROR is %@",error);
+    }];
+    
+    
 }
 
 

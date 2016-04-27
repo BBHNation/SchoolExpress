@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '751E1C186F0E7667C020AF0C'
+               BlueprintIdentifier = '7D6CF7BD0AFB81002F52692B'
                BlueprintName = 'STAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSTAlertView.a'>
