@@ -44,6 +44,7 @@
     [query getObjectInBackgroundWithId:user.objectId block:^(AVObject *object, NSError *error) {
         AVUser *user = (AVUser *)object;
         [weakSelf.userNameLabel setText:user.username];
+        [weakSelf.userHeadImageView sd_setImageWithURL:[NSURL URLWithString:user[@"headImage"]] placeholderImage:nil];
     }];
 }
 
