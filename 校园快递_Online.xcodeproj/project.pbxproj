@@ -16,6 +16,7 @@
 		5252249B1CCDFE940039F9F4 /* _____OnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252249A1CCDFE940039F9F4 /* _____OnlineTests.m */; };
 		525224A61CCDFE940039F9F4 /* _____OnlineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525224A51CCDFE940039F9F4 /* _____OnlineUITests.m */; };
 		525AF0D81CD08FAA00AA4DE3 /* XYMySendedExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525AF0D71CD08FAA00AA4DE3 /* XYMySendedExpressViewController.m */; };
+		525AF0DC1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525AF0DB1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m */; };
 		52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E091CCE039500C63AF8 /* XYMainViewController.m */; };
 		52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E131CCF019100C63AF8 /* XYMainTableViewCell.m */; };
 		52D02E161CCF019100C63AF8 /* XYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D02E141CCF019100C63AF8 /* XYMainTableViewCell.xib */; };
@@ -61,6 +62,8 @@
 		525224A71CCDFE940039F9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525AF0D61CD08FAA00AA4DE3 /* XYMySendedExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMySendedExpressViewController.h; sourceTree = "<group>"; };
 		525AF0D71CD08FAA00AA4DE3 /* XYMySendedExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMySendedExpressViewController.m; sourceTree = "<group>"; };
+		525AF0DA1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAcceptedExpressDetailViewController.h; sourceTree = "<group>"; };
+		525AF0DB1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAcceptedExpressDetailViewController.m; sourceTree = "<group>"; };
 		52D02E081CCE039500C63AF8 /* XYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainViewController.h; sourceTree = "<group>"; };
 		52D02E091CCE039500C63AF8 /* XYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainViewController.m; sourceTree = "<group>"; };
 		52D02E101CCE0EA700C63AF8 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
@@ -198,6 +201,15 @@
 			name = Sended;
 			sourceTree = "<group>";
 		};
+		525AF0DD1CD0AE8800AA4DE3 /* AcceptedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				525AF0DA1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.h */,
+				525AF0DB1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m */,
+			);
+			name = AcceptedDetail;
+			sourceTree = "<group>";
+		};
 		52D02E011CCE036700C63AF8 /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +244,7 @@
 				52D02E291CCF37D400C63AF8 /* Register */,
 				52342AA01CCF642100649B54 /* Accept */,
 				525AF0D91CD08FAF00AA4DE3 /* Sended */,
+				525AF0DD1CD0AE8800AA4DE3 /* AcceptedDetail */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -472,6 +485,7 @@
 				52342A9F1CCF549D00649B54 /* XYAcceptExpressViewController.m in Sources */,
 				52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */,
 				525224821CCDFE940039F9F4 /* main.m in Sources */,
+				525AF0DC1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m in Sources */,
 				52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

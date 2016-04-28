@@ -8,6 +8,7 @@
 
 #import "XYMySendedExpressViewController.h"
 #import "XYMainTableViewCell.h"
+#import "XYAcceptedExpressDetailViewController.h"
 
 @interface XYMySendedExpressViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -23,6 +24,10 @@
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self getDataFromServer];
     }];
+    
+    
+    _mainTableView.rowHeight = 100;
+    _mainTableView.tableFooterView = [UIView new];
     [_mainTableView.mj_header beginRefreshing];
 }
 
@@ -56,12 +61,23 @@
         AVObject *item = _tableViewDataArray[indexPath.row];
         [cell setCellItem:item];
     }
+    
+    
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.hidesBottomBarWhenPushed = YES;
+    [self performSegueWithIdentifier:@"isAccepted" sender:_tableViewDataArray[indexPath.row]];
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"isAccepted"]) {
+        XYAcceptedExpressDetailViewController *destinationVC = segue.destinationViewController;
+        destinationVC.cellItem = (AVObject *)sender;
+    }
+}
 
 
 

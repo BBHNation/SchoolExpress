@@ -46,6 +46,12 @@
         [weakSelf.userNameLabel setText:user.username];
         [weakSelf.userHeadImageView sd_setImageWithURL:[NSURL URLWithString:user[@"headImage"]] placeholderImage:nil];
     }];
+    
+    
+    
+    if ([_cellItem[@"completed"] boolValue]) {
+        self.contentView.backgroundColor = [UIColor blueColor];
+    }
 }
 
 @end

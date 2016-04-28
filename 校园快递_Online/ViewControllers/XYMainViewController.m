@@ -30,6 +30,11 @@
     _tableViewModel = [XYMainTableViewModel new];
     _tableViewDataArray = [NSMutableArray new];
     
+    
+    
+    
+    _mainTableView.rowHeight = 100;
+    _mainTableView.tableFooterView = [UIView new];
     //下拉加载
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [_tableViewModel getLatestExpressInfoFromServer];
@@ -98,9 +103,6 @@
     return cell;
 }
 
-- (CGFloat )tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.hidesBottomBarWhenPushed = YES;
