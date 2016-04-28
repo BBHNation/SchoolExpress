@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [_userNameLabel setText:@"---"];
+    _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -26,7 +26,7 @@
     //date
     NSDate *date = _cellItem.createdAt;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [dateFormatter setDateFormat:@"MM-dd HH:mm"];
     NSString *currentDateString = [dateFormatter stringFromDate:date];
     [_dateLabel setText:currentDateString];
     
@@ -36,7 +36,7 @@
     
     [_expressCompanyLabel setText:_cellItem[@"expressCompany"]];
     
-    [_tipLabel setText:[NSString stringWithFormat:@"小费:%@元",_cellItem[@"tip"]]];
+    [_tipLabel setText:[NSString stringWithFormat:@"%@元",_cellItem[@"tip"]]];
     
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
     AVUser *user = _cellItem[@"sendUser"];

@@ -56,7 +56,7 @@
     [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         NSLog(@"ERROR is %@",error);
     }];
-    _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:0.8].CGColor;
+    _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
     
     [_userNameLabel setText:[AVUser currentUser].username];
 }
