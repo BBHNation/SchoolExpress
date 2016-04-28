@@ -18,7 +18,7 @@
 @property (nonatomic, weak) IBOutlet UITableView *mainTableView;
 @property (nonatomic, strong) XYMainTableViewModel *tableViewModel;
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
-
+@property (nonatomic, assign) BOOL isLatest;
 @end
 
 @implementation XYMainViewController
@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"HOME"];
+    _isLatest = YES;
     _tableViewModel = [XYMainTableViewModel new];
     _tableViewDataArray = [NSMutableArray new];
     
@@ -36,7 +37,12 @@
     _mainTableView.tableFooterView = [UIView new];
     //下拉加载
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [_tableViewModel getLatestExpressInfoFromServer];
+        if (_isLatest) {
+            [_tableViewModel getLatestExpressInfoFromServer];
+        }
+        else{
+            [_tableViewModel getMyAcountExpressInfoFromServer];
+        }
     }];
     
     //设置监听
@@ -51,7 +57,8 @@
     
 }
 - (IBAction)latestOrMyacount:(id)sender {
-    UISegmentedControl *segmentControl = (UISegmentedControl *)sender;
+    _isLatest = !_isLatest;
+    [_mainTableView.mj_header beginRefreshing];
 }
 
 - (void)viewDidAppear:(BOOL)animated{

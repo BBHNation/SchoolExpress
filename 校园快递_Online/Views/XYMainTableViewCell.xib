@@ -46,9 +46,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nL-uq-mwZ">
-                        <rect key="frame" x="124" y="8" width="209" height="21"/>
+                        <rect key="frame" x="124" y="8" width="323" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="209" id="RBz-AK-3vt"/>
                             <constraint firstAttribute="height" constant="21" id="ruX-KY-nra"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -56,10 +55,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hG-In-1i9">
-                        <rect key="frame" x="124" y="84" width="165" height="21"/>
+                        <rect key="frame" x="124" y="84" width="323" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="2wb-Yd-Eto"/>
-                            <constraint firstAttribute="width" constant="165" id="bWH-Vi-C59"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -109,10 +107,12 @@
                 <color key="backgroundColor" red="0.2196078431372549" green="0.27450980392156865" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="D9a-oR-OYX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="2V7-1O-Ke7"/>
+                    <constraint firstItem="3hG-In-1i9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3pa-xA-hQL"/>
                     <constraint firstItem="Wau-y3-LlI" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4hj-LV-dhI"/>
                     <constraint firstItem="0nL-uq-mwZ" firstAttribute="leading" secondItem="Xuh-0x-Geb" secondAttribute="trailing" constant="40" id="9Fg-Ey-huo"/>
                     <constraint firstItem="qdb-8Z-wGA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bzi-J2-9xB"/>
                     <constraint firstItem="b4Q-La-ujq" firstAttribute="centerX" secondItem="Xuh-0x-Geb" secondAttribute="centerX" id="C5q-GY-esU"/>
+                    <constraint firstItem="0nL-uq-mwZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="E9V-6i-FYD"/>
                     <constraint firstItem="o9p-Av-xR9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F93-ye-cuw"/>
                     <constraint firstItem="b4Q-La-ujq" firstAttribute="top" secondItem="Xuh-0x-Geb" secondAttribute="bottom" id="K2i-zn-R3g"/>
                     <constraint firstItem="D9a-oR-OYX" firstAttribute="centerY" secondItem="Xuh-0x-Geb" secondAttribute="centerY" constant="6" id="LZb-Lr-Vcl"/>
@@ -149,7 +149,7 @@
                 <outlet property="userHeadImageView" destination="Xuh-0x-Geb" id="voA-Mh-hx5"/>
                 <outlet property="userNameLabel" destination="b4Q-La-ujq" id="EFN-A1-HSC"/>
             </connections>
-            <point key="canvasLocation" x="357.5" y="376.5"/>
+            <point key="canvasLocation" x="98.5" y="506.5"/>
         </tableViewCell>
     </objects>
     <resources>
