@@ -8,7 +8,8 @@
 
 #import "XYAcceptExpressViewController.h"
 
-@interface XYAcceptExpressViewController ()
+@interface XYAcceptExpressViewController ()<UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userHeadImage;
@@ -32,7 +33,7 @@
     [_expressCompany.detailTextLabel setText:_cellItem[@"expressCompany"]];
     [_tip.detailTextLabel setText:[NSString stringWithFormat:@"%@",_cellItem[@"tip"]]];
     
-    
+    _mainTableView.tableFooterView = [UIView new];
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
     AVUser *user = _cellItem[@"sendUser"];
     __weak typeof(self) weakSelf = self;
@@ -63,11 +64,14 @@
     }
 }
 
-- (void)setCellItem:(AVObject *)cellItem{
-    _cellItem = cellItem;
-    
+- (CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 30;
 }
-
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
+}
 
 
 @end

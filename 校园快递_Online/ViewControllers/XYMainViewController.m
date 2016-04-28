@@ -26,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"HOME"];
-    _mainTableView.backgroundColor = [UIColor colorWithRed:28.0/255.0 green:51.0/255.0 blue:84.0/255.0 alpha:0.3];
     _tableViewModel = [XYMainTableViewModel new];
     _tableViewDataArray = [NSMutableArray new];
     
@@ -48,7 +47,7 @@
         [weakSelf.mainTableView reloadData];
     }];
     //开始加载
-    [_tableViewModel getLatestExpressInfoFromServer];
+    [_mainTableView.mj_header beginRefreshing];
     
 }
 
@@ -99,12 +98,15 @@
         cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
         AVObject *item = _tableViewDataArray[indexPath.row];
         [cell setCellItem:item];
+        cell.selectedBackgroundView = [UIView new];
+        cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:88.0/255.0 blue:101.0/255.0 alpha:1.0];
     }
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
     self.hidesBottomBarWhenPushed = YES;
     [self performSegueWithIdentifier:@"AcceptExpressBefor" sender:_tableViewDataArray[indexPath.row]];
     self.hidesBottomBarWhenPushed = NO;
