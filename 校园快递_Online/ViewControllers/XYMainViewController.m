@@ -50,6 +50,9 @@
     [_mainTableView.mj_header beginRefreshing];
     
 }
+- (IBAction)latestOrMyacount:(id)sender {
+    UISegmentedControl *segmentControl = (UISegmentedControl *)sender;
+}
 
 - (void)viewDidAppear:(BOOL)animated{
     [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
@@ -58,6 +61,8 @@
     _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
     
     [_userNameLabel setText:[AVUser currentUser].username];
+    
+    [_mainTableView.mj_header beginRefreshing];
 }
 
 - (IBAction)GotoMySendedExpressAction:(id)sender {
@@ -100,6 +105,7 @@
         [cell setCellItem:item];
         cell.selectedBackgroundView = [UIView new];
         cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:88.0/255.0 blue:101.0/255.0 alpha:1.0];
+        [cell setSelected:NO];
     }
     return cell;
 }

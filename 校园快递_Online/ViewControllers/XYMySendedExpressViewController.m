@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+@property (weak, nonatomic) IBOutlet UILabel *noticeLabel;
 
 @end
 
@@ -21,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_noticeLabel setHidden:YES];
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self getDataFromServer];
     }];
@@ -40,6 +42,9 @@
             weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
             [weakSelf.mainTableView.mj_header endRefreshing];
             [weakSelf.mainTableView reloadData];
+            if (weakSelf.tableViewDataArray.count==0) {
+                [weakSelf.noticeLabel setHidden:NO];
+            }
         }
         else{
             NSLog(@"error %@",error);
@@ -60,6 +65,9 @@
         cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
         AVObject *item = _tableViewDataArray[indexPath.row];
         [cell setCellItem:item];
+        cell.selectedBackgroundView = [UIView new];
+        cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:88.0/255.0 blue:101.0/255.0 alpha:1.0];
+        [cell setSelected:NO];
     }
     
     
@@ -67,6 +75,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
     self.hidesBottomBarWhenPushed = YES;
     [self performSegueWithIdentifier:@"isAccepted" sender:_tableViewDataArray[indexPath.row]];
 }

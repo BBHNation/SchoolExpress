@@ -21,6 +21,7 @@
     AVQuery *query = [AVQuery queryWithClassName:@"LatestExpressList"];
     BOOL boolNum = NO;
     [query whereKey:@"isAccepted" equalTo:[NSNumber numberWithBool:boolNum]];
+    [query whereKey:@"completed" equalTo:[NSNumber numberWithBool:boolNum]];
     __weak typeof(self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
@@ -30,7 +31,16 @@
 }
 
 - (void)getMyAcountExpressInfoFromServer{
-    
+    AVQuery *query = [AVQuery queryWithClassName:@"LatestExpressList"];
+    BOOL boolNum = NO;
+    [query whereKey:@"isAccepted" equalTo:[NSNumber numberWithBool:boolNum]];
+    [query whereKey:@"hicompleted" equalTo:[NSNumber numberWithBool:boolNum]];
+    __weak typeof(self) weakSelf = self;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
+        [weakSelf willChangeValueForKey:@"isRefreshed"];
+        [weakSelf didChangeValueForKey:@"isRefreshed"];
+    }];
 }
 
 

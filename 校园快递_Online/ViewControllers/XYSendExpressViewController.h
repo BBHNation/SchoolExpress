@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYSendExpressViewController : UIViewController
+@interface XYSendExpressViewController : UITableViewController
 
 @end

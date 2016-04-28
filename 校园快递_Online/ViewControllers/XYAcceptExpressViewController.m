@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableViewCell *thingType;
 @property (weak, nonatomic) IBOutlet UITableViewCell *tip;
 @property (weak, nonatomic) IBOutlet UILabel *otherInfo;
+@property (weak, nonatomic) IBOutlet UITableViewCell *expressPhone;
 
 @end
 
@@ -32,6 +33,9 @@
     [_destination.detailTextLabel setText:_cellItem[@"destination"]];
     [_expressCompany.detailTextLabel setText:_cellItem[@"expressCompany"]];
     [_tip.detailTextLabel setText:[NSString stringWithFormat:@"%@",_cellItem[@"tip"]]];
+    [_expressPhone.detailTextLabel setText:_cellItem[@"expressPhone"]];
+    [_thingType.detailTextLabel setText:_cellItem[@"expressType"]];
+    [_otherInfo setText:_cellItem[@"otherInfo"]];
     
     _mainTableView.tableFooterView = [UIView new];
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
@@ -45,6 +49,7 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)acceptAction:(id)sender {
+    [SVProgressHUD showWithStatus:@"加载中"];
     if (![AVUser currentUser]) {
         
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
@@ -56,14 +61,20 @@
         [_cellItem saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded) {
                 NSLog(@"succeeded");
+                [SVProgressHUD showSuccessWithStatus:@"接单成功"];
+                [self.navigationController popViewControllerAnimated:YES];
             }
             else {
+                [SVProgressHUD showErrorWithStatus:@"接单失败"];
                 NSLog(@"error %@",error);
             }
         }];
     }
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    view.tintColor = _mainTableView.backgroundColor;
+}
 - (CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 30;
 }
