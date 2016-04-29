@@ -62,20 +62,22 @@
     static NSString *identifier = @"XYSendedTableViewCell";
     XYMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell&&_tableViewDataArray.count!=0) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
-        AVObject *item = _tableViewDataArray[indexPath.row];
-        [cell setCellItem:item];
-        cell.selectedBackgroundView = [UIView new];
-        cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:88.0/255.0 blue:101.0/255.0 alpha:1.0];
-        [cell setSelected:NO];
+        [tableView registerNib:[UINib nibWithNibName:@"XYMainTableViewCell" bundle:nil] forCellReuseIdentifier:identifier];
+        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        
+//        cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
+        
+        
     }
-    
-    
+    AVObject *item = _tableViewDataArray[indexPath.row];
+    [cell setCellItem:item];
+    cell.selectedBackgroundView = [UIView new];
+    cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:88.0/255.0 blue:101.0/255.0 alpha:1.0];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.hidesBottomBarWhenPushed = YES;
     [self performSegueWithIdentifier:@"isAccepted" sender:_tableViewDataArray[indexPath.row]];
 }

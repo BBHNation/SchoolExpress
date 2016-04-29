@@ -24,9 +24,14 @@
     [query whereKey:@"completed" equalTo:[NSNumber numberWithBool:boolNum]];
     __weak typeof(self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
-        [weakSelf willChangeValueForKey:@"isRefreshed"];
-        [weakSelf didChangeValueForKey:@"isRefreshed"];
+        if (!error) {
+            weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
+            [weakSelf willChangeValueForKey:@"isRefreshed"];
+            [weakSelf didChangeValueForKey:@"isRefreshed"];
+        }
+        else{
+            [SVProgressHUD showErrorWithStatus:@"加载失败"];
+        }
     }];
 }
 
@@ -37,9 +42,14 @@
     [query whereKey:@"hicompleted" equalTo:[NSNumber numberWithBool:boolNum]];
     __weak typeof(self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
-        [weakSelf willChangeValueForKey:@"isRefreshed"];
-        [weakSelf didChangeValueForKey:@"isRefreshed"];
+        if (!error) {
+            weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:objects];
+            [weakSelf willChangeValueForKey:@"isRefreshed"];
+            [weakSelf didChangeValueForKey:@"isRefreshed"];
+        }
+        else{
+            [SVProgressHUD showErrorWithStatus:@"加载失败"];
+        }
     }];
 }
 

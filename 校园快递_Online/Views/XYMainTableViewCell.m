@@ -38,6 +38,12 @@
     
     [_tipLabel setText:[NSString stringWithFormat:@"%@元",_cellItem[@"tip"]]];
     
+    [_userNameLabel setText:_cellItem[@"sendUserName"]];
+    
+    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:_cellItem[@"sendUserHeadImage"]]];
+    
+    
+    /*
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
     AVUser *user = _cellItem[@"sendUser"];
     __weak typeof(self) weakSelf = self;
@@ -46,11 +52,11 @@
         [weakSelf.userNameLabel setText:user.username];
         [weakSelf.userHeadImageView sd_setImageWithURL:[NSURL URLWithString:user[@"headImage"]] placeholderImage:nil];
     }];
-    
+     */
     
     
     if ([_cellItem[@"completed"] boolValue]) {
-        self.contentView.backgroundColor = [UIColor blueColor];
+        self.contentView.backgroundColor = [UIColor lightGrayColor];
     }
 }
 

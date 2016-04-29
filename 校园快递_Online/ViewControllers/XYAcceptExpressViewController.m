@@ -51,11 +51,13 @@
 - (IBAction)acceptAction:(id)sender {
     [SVProgressHUD showWithStatus:@"加载中"];
     if (![AVUser currentUser]) {
-        
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
     else{
         [_cellItem setObject:[AVUser currentUser] forKey:@"undertakeUser"];
+        [_cellItem setObject:[AVUser currentUser].username forKey:@"undertakeUserName"];
+        [_cellItem setObject:[AVUser currentUser][@"headImage"] forKey:@"undertakeUserHeadImage"];
+        
         BOOL boolnum = YES;
         [_cellItem setObject:[NSNumber numberWithBool:boolnum] forKey:@"isAccepted"];
         [_cellItem saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

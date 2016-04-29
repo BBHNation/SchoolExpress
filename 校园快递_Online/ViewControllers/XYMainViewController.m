@@ -49,6 +49,7 @@
     __weak typeof(self) weakSelf = self;
     [self.KVOController observe:_tableViewModel keyPath:@"isRefreshed" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         [weakSelf.mainTableView.mj_header endRefreshing];
+        [SVProgressHUD dismiss];
         weakSelf.tableViewDataArray = [NSMutableArray arrayWithArray:weakSelf.tableViewModel.tableViewDataArray];
         [weakSelf.mainTableView reloadData];
     }];
@@ -69,7 +70,14 @@
     
     [_userNameLabel setText:[AVUser currentUser].username];
     
-    [_mainTableView.mj_header beginRefreshing];
+//    [_mainTableView.mj_header beginRefreshing];
+    [SVProgressHUD showWithStatus:@"刷新中"];
+    if (_isLatest) {
+        [_tableViewModel getLatestExpressInfoFromServer];
+    }
+    else{
+        [_tableViewModel getMyAcountExpressInfoFromServer];
+    }
 }
 
 - (IBAction)GotoMySendedExpressAction:(id)sender {
@@ -119,7 +127,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.hidesBottomBarWhenPushed = YES;
     [self performSegueWithIdentifier:@"AcceptExpressBefor" sender:_tableViewDataArray[indexPath.row]];
     self.hidesBottomBarWhenPushed = NO;

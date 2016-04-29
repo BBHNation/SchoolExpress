@@ -39,6 +39,7 @@
 //发送我的订单
 - (IBAction)sendAction:(id)sender {
     [SVProgressHUD showWithStatus:@"加载中"];
+    
     AVObject *SendExpressList = [AVObject objectWithClassName:@"LatestExpressList"];
     if (_startPointTextFeild.text&&_destinationTextFeild.text) {
         
@@ -47,6 +48,8 @@
         [SendExpressList setObject:_expressCompanyTextFeild.text forKey:@"expressCompany"];
         [SendExpressList setObject:[NSNumber numberWithDouble: _tipStapper.value] forKey:@"tip"];
         [SendExpressList setObject:[AVUser currentUser] forKey:@"sendUser"];
+        [SendExpressList setObject:[AVUser currentUser][@"headImage"] forKey:@"sendUserHeadImage"];
+        [SendExpressList setObject:[AVUser currentUser].username forKey:@"sendUserName"];
         [SendExpressList setObject:_expressCompanyPhoneTextFeild.text forKey:@"expressPhone"];
         [SendExpressList setObject:_typeTextfeild.text forKey:@"expressType"];
         [SendExpressList setObject:_otherInfoTextView.text forKey:@"otherInfo"];
