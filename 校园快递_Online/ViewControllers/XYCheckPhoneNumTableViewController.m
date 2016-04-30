@@ -43,6 +43,9 @@
 - (IBAction)action:(id)sender {
     [self.view endEditing:YES];
 }
+- (IBAction)cancelAction:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{

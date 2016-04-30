@@ -49,14 +49,14 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)acceptAction:(id)sender {
-    [SVProgressHUD showWithStatus:@"加载中"];
     if (![AVUser currentUser]) {
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
     else if (![[AVUser currentUser][@"certified"] boolValue]) {
-        
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ToBeCourier"] animated:YES completion:nil];
     }
     else{
+        [SVProgressHUD showWithStatus:@"加载中"];
         [_cellItem setObject:[AVUser currentUser] forKey:@"undertakeUser"];
         [_cellItem setObject:[AVUser currentUser].username forKey:@"undertakeUserName"];
         [_cellItem setObject:[AVUser currentUser][@"headImage"] forKey:@"undertakeUserHeadImage"];

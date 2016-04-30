@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AMSmoothAlert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KVOController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,12 +77,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2BAB6A1002B17A04ED00EF23E5CBD685</key>
+		<key>38C1E017813E26D237DE62553831C387</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37FDD8F44A887E5D2DD8DFB63335EB19</key>
+		<key>51EE9668EE51A9C9DEF15EC43F6DF6BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5E64D6B6EA61F3D4A6653F4917A04A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>65E86FC8F874CD855F1291330BDE16D1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>705C772492B1A08286705F634BE624F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7163CFFF94AE37DB04C37BBA9E6E2E7B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +117,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE95702204C1F169982B61C17F72706B</key>
+		<key>ADBDFC7EA7072ECE5F9F6DFAD6BC8179</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BEE359D46B621318E40D90674D8C02AD</key>
+		<key>B27108B8F9E9DD39A00ACBBFF8CBEA26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE0F6669437162BF40172F1DC327E0EE</key>
+		<key>C104BDAFF9A61CE05E16A555D70BE6D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE93392C80D45AE8768EDBA0C493C1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2F9D7DF2E1361E4389B7ACB144C25E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC70F59D16A7C4020DD37032290DDA7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

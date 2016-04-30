@@ -31,7 +31,6 @@
     
     
     
-    
     _mainTableView.rowHeight = 100;
     _mainTableView.tableFooterView = [UIView new];
     //下拉加载
@@ -93,11 +92,10 @@
 
 - (IBAction)SendMyEcpressAction:(id)sender {
     if (![AVUser currentUser]) {
-//        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
-        [self performSegueWithIdentifier:@"checkPhoneNum" sender:self];
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
     else if (![[AVUser currentUser][@"mobilePhoneVerified"] boolValue]) {
-        [self performSegueWithIdentifier:@"checkPhoneNum" sender:self];
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"CheckPhoneNum"] animated:YES completion:nil];
     }
     else{
         NSLog(@"已经登陆");

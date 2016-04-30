@@ -58,11 +58,33 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/checkMark.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/checkMark@2x.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/crossMark.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/crossMark@2x.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/info.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/info@2x.png"
+  install_resource "GPUImage/framework/Resources/lookup.png"
+  install_resource "GPUImage/framework/Resources/lookup_amatorka.png"
+  install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/STAlertView.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/checkMark.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/checkMark@2x.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/crossMark.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/crossMark@2x.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/info.png"
+  install_resource "AMSmoothAlert/AMSmoothAlert/assets/info@2x.png"
+  install_resource "GPUImage/framework/Resources/lookup.png"
+  install_resource "GPUImage/framework/Resources/lookup_amatorka.png"
+  install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/STAlertView.bundle"
