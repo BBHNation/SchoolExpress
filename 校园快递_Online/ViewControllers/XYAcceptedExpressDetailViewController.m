@@ -11,6 +11,8 @@
 @interface XYAcceptedExpressDetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userHeadImage;
+@property (strong, nonatomic) IBOutlet UITableView *mainTableView;
+@property (weak, nonatomic) IBOutlet UIImageView *acceptedUserHeadImage;
 
 @end
 
@@ -19,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setCellItem];
+    _acceptedUserHeadImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    _mainTableView.tableFooterView = [UIView new];
     // Do any additional setup after loading the view.
 }
 
@@ -44,5 +48,17 @@
             NSLog(@"E%@",error);
         }
     }];
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    view.tintColor = _mainTableView.backgroundColor;
+}
+- (CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 30;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
 }
 @end

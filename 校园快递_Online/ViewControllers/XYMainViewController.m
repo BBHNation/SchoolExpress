@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"HOME"];
     _isLatest = YES;
     _tableViewModel = [XYMainTableViewModel new];
     _tableViewDataArray = [NSMutableArray new];
@@ -94,7 +93,11 @@
 
 - (IBAction)SendMyEcpressAction:(id)sender {
     if (![AVUser currentUser]) {
-        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
+//        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
+        [self performSegueWithIdentifier:@"checkPhoneNum" sender:self];
+    }
+    else if (![[AVUser currentUser][@"mobilePhoneVerified"] boolValue]) {
+        [self performSegueWithIdentifier:@"checkPhoneNum" sender:self];
     }
     else{
         NSLog(@"已经登陆");

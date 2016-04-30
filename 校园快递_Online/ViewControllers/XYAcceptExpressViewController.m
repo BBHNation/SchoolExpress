@@ -53,6 +53,9 @@
     if (![AVUser currentUser]) {
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
+    else if (![[AVUser currentUser][@"certified"] boolValue]) {
+        
+    }
     else{
         [_cellItem setObject:[AVUser currentUser] forKey:@"undertakeUser"];
         [_cellItem setObject:[AVUser currentUser].username forKey:@"undertakeUserName"];

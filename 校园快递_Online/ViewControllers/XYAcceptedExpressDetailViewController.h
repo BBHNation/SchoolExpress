@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYAcceptedExpressDetailViewController : UIViewController
+@interface XYAcceptedExpressDetailViewController : UITableViewController
 @property (nonatomic, strong) AVObject *cellItem;
 @end
