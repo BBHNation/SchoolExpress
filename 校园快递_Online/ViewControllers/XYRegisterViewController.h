@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYRegisterViewController : UIViewController
+@interface XYRegisterViewController : UITableViewController
 
 @end

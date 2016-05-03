@@ -41,13 +41,6 @@
     
 }
 - (IBAction)sendCodeAction:(id)sender {
-    
-//    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_phoneNumTextfield.text smsCode:_ceodTextField.text block:^(AVUser *user, NSError *error) {
-//        [AVUser currentUser].mobilePhoneNumber = user.mobilePhoneNumber;
-//        [AVUser currentUser][@"mobilePhoneVerified"] = [NSNumber numberWithBool:[bool true]];
-//        
-//        NSLog(@"error %@",error);
-//    }];
     [AVUser verifyMobilePhone:_codeTextField.text withBlock:^(BOOL succeeded, NSError *error) {
         //验证结果
         if (succeeded) {

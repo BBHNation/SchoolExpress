@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextFeild;
 @property (weak, nonatomic) IBOutlet UITextField *passwordAgainFeild;
 
+
+
+
 @end
 
 @implementation XYRegisterViewController
@@ -23,6 +26,9 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 
 - (IBAction)registerButtonAction:(id)sender {
     NSData *data = UIImagePNGRepresentation(_userHeadImageView.image);

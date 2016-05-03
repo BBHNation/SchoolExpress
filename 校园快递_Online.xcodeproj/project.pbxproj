@@ -24,6 +24,8 @@
 		52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E1F1CCF170100C63AF8 /* XYSendExpressViewController.m */; };
 		52D02E261CCF294900C63AF8 /* XYRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */; };
 		52DFC9821CD346120071ED35 /* XYCheckPhoneNumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9811CD346120071ED35 /* XYCheckPhoneNumTableViewController.m */; };
+		52DFC9CC1CD870E40071ED35 /* XYToBeCourierTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9CB1CD870E40071ED35 /* XYToBeCourierTableViewController.m */; };
+		52DFC9D01CD875120071ED35 /* XYLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */; };
 		DCE54EA4450B8A1E358EC0FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4581BCE346DFDB5B6488C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,10 @@
 		52D02E251CCF294900C63AF8 /* XYRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRegisterViewController.m; sourceTree = "<group>"; };
 		52DFC9801CD346120071ED35 /* XYCheckPhoneNumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCheckPhoneNumTableViewController.h; sourceTree = "<group>"; };
 		52DFC9811CD346120071ED35 /* XYCheckPhoneNumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCheckPhoneNumTableViewController.m; sourceTree = "<group>"; };
+		52DFC9CA1CD870E40071ED35 /* XYToBeCourierTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYToBeCourierTableViewController.h; sourceTree = "<group>"; };
+		52DFC9CB1CD870E40071ED35 /* XYToBeCourierTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYToBeCourierTableViewController.m; sourceTree = "<group>"; };
+		52DFC9CE1CD875120071ED35 /* XYLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLogInViewController.h; sourceTree = "<group>"; };
+		52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLogInViewController.m; sourceTree = "<group>"; };
 		7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4581BCE346DFDB5B6488C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,10 +251,12 @@
 				52D02E271CCF37C700C63AF8 /* Main */,
 				52D02E281CCF37CD00C63AF8 /* Send */,
 				52D02E291CCF37D400C63AF8 /* Register */,
+				52DFC9D11CD875750071ED35 /* LogIn */,
 				52342AA01CCF642100649B54 /* Accept */,
 				525AF0D91CD08FAF00AA4DE3 /* Sended */,
 				525AF0DD1CD0AE8800AA4DE3 /* AcceptedDetail */,
 				52DFC9831CD4960C0071ED35 /* CheckPhone */,
+				52DFC9CD1CD874E30071ED35 /* ToBeCourier */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +295,24 @@
 				52DFC9811CD346120071ED35 /* XYCheckPhoneNumTableViewController.m */,
 			);
 			name = CheckPhone;
+			sourceTree = "<group>";
+		};
+		52DFC9CD1CD874E30071ED35 /* ToBeCourier */ = {
+			isa = PBXGroup;
+			children = (
+				52DFC9CA1CD870E40071ED35 /* XYToBeCourierTableViewController.h */,
+				52DFC9CB1CD870E40071ED35 /* XYToBeCourierTableViewController.m */,
+			);
+			name = ToBeCourier;
+			sourceTree = "<group>";
+		};
+		52DFC9D11CD875750071ED35 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				52DFC9CE1CD875120071ED35 /* XYLogInViewController.h */,
+				52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */,
+			);
+			name = LogIn;
 			sourceTree = "<group>";
 		};
 		5ADC2E92D05B05DCD0002CEE /* Pods */ = {
@@ -494,8 +520,10 @@
 				52DFC9821CD346120071ED35 /* XYCheckPhoneNumTableViewController.m in Sources */,
 				52D02E261CCF294900C63AF8 /* XYRegisterViewController.m in Sources */,
 				52D02E151CCF019100C63AF8 /* XYMainTableViewCell.m in Sources */,
+				52DFC9CC1CD870E40071ED35 /* XYToBeCourierTableViewController.m in Sources */,
 				525AF0D81CD08FAA00AA4DE3 /* XYMySendedExpressViewController.m in Sources */,
 				52D02E0A1CCE039500C63AF8 /* XYMainViewController.m in Sources */,
+				52DFC9D01CD875120071ED35 /* XYLogInViewController.m in Sources */,
 				52342A9F1CCF549D00649B54 /* XYAcceptExpressViewController.m in Sources */,
 				52D02E201CCF170100C63AF8 /* XYSendExpressViewController.m in Sources */,
 				525224821CCDFE940039F9F4 /* main.m in Sources */,
