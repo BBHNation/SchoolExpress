@@ -11,7 +11,7 @@
 @interface XYCheckPhoneNumTableViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumTextfield;
-@property (weak, nonatomic) IBOutlet UITextField *ceodTextField;
+@property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 
 @end
 
@@ -24,19 +24,38 @@
 }
 
 - (IBAction)getCodeAction:(id)sender {
-    [AVOSCloud requestSmsCodeWithPhoneNumber:_phoneNumTextfield.text callback:^(BOOL succeeded, NSError *error) {
+    [AVUser currentUser].mobilePhoneNumber = _phoneNumTextfield.text;
+    [[AVUser currentUser]saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            [AVUser requestMobilePhoneVerify:_phoneNumTextfield.text withBlock:^(BOOL succeeded, NSError *error) {
+                if(succeeded){
+                    //发送成功
+                    NSLog(@"succeeded");
+                }
+                else{
+                    NSLog(@"%@",error);
+                }
+            }];
+        }
+    }];
+    
+}
+- (IBAction)sendCodeAction:(id)sender {
+    
+//    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_phoneNumTextfield.text smsCode:_ceodTextField.text block:^(AVUser *user, NSError *error) {
+//        [AVUser currentUser].mobilePhoneNumber = user.mobilePhoneNumber;
+//        [AVUser currentUser][@"mobilePhoneVerified"] = [NSNumber numberWithBool:[bool true]];
+//        
+//        NSLog(@"error %@",error);
+//    }];
+    [AVUser verifyMobilePhone:_codeTextField.text withBlock:^(BOOL succeeded, NSError *error) {
+        //验证结果
         if (succeeded) {
             NSLog(@"succeeded");
         }
         else{
-            NSLog(@"e%@",error);
+            NSLog(@"%@",error);
         }
-        // 发送失败可以查看 error 里面提供的信息
-    }];
-}
-- (IBAction)sendCodeAction:(id)sender {
-    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_phoneNumTextfield.text smsCode:_ceodTextField.text block:^(AVUser *user, NSError *error) {
-        NSLog(@"error %@",error);
     }];
 
 }

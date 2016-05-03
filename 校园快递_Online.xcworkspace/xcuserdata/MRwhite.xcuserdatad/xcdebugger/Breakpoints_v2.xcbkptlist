@@ -52,27 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
-            timestampString = "483684770.668383"
+            timestampString = "483935431.056901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-action:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
-            timestampString = "483684786.511987"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-sendCodeAction:"
             landmarkType = "5">
             <Locations>
@@ -84,12 +68,12 @@
                   moduleName = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/MRwhite/Documents/SchoolExpress/SchoolExpress/%E6%A0%A1%E5%9B%AD%E5%BF%AB%E9%80%92_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
-                  timestampString = "483684786.513797"
+                  timestampString = "483935431.202382"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "60">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -99,14 +83,46 @@
                   moduleName = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/MRwhite/Documents/SchoolExpress/SchoolExpress/%E6%A0%A1%E5%9B%AD%E5%BF%AB%E9%80%92_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
-                  timestampString = "483684786.513992"
+                  timestampString = "483935431.202506"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "82">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "56">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
+            timestampString = "483935431.056901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-sendCodeAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x6821;&#x56ed;&#x5feb;&#x9012;_Online/ViewControllers/XYCheckPhoneNumTableViewController.m"
+            timestampString = "483935431.056901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-getCodeAction:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
