@@ -59,6 +59,9 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
+- (IBAction)endEditing:(id)sender {
+    [self.view endEditing:YES];
+}
 
 - (IBAction)pickUserHeadImageAction:(id)sender {
     [self presentAlertView];

@@ -26,6 +26,7 @@
 		52DFC9821CD346120071ED35 /* XYCheckPhoneNumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9811CD346120071ED35 /* XYCheckPhoneNumTableViewController.m */; };
 		52DFC9CC1CD870E40071ED35 /* XYToBeCourierTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9CB1CD870E40071ED35 /* XYToBeCourierTableViewController.m */; };
 		52DFC9D01CD875120071ED35 /* XYLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */; };
+		52DFCA131CD98B460071ED35 /* XYSelfCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFCA121CD98B460071ED35 /* XYSelfCenterTableViewController.m */; };
 		DCE54EA4450B8A1E358EC0FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4581BCE346DFDB5B6488C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		52DFC9CB1CD870E40071ED35 /* XYToBeCourierTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYToBeCourierTableViewController.m; sourceTree = "<group>"; };
 		52DFC9CE1CD875120071ED35 /* XYLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLogInViewController.h; sourceTree = "<group>"; };
 		52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLogInViewController.m; sourceTree = "<group>"; };
+		52DFCA111CD98B460071ED35 /* XYSelfCenterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelfCenterTableViewController.h; sourceTree = "<group>"; };
+		52DFCA121CD98B460071ED35 /* XYSelfCenterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelfCenterTableViewController.m; sourceTree = "<group>"; };
 		7B05EE9EC338FDF524D45EDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BCE3420ABDEDF343B8638968 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4581BCE346DFDB5B6488C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +260,7 @@
 				525AF0DD1CD0AE8800AA4DE3 /* AcceptedDetail */,
 				52DFC9831CD4960C0071ED35 /* CheckPhone */,
 				52DFC9CD1CD874E30071ED35 /* ToBeCourier */,
+				52DFCA141CD98BE40071ED35 /* SelfCenter */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -313,6 +317,15 @@
 				52DFC9CF1CD875120071ED35 /* XYLogInViewController.m */,
 			);
 			name = LogIn;
+			sourceTree = "<group>";
+		};
+		52DFCA141CD98BE40071ED35 /* SelfCenter */ = {
+			isa = PBXGroup;
+			children = (
+				52DFCA111CD98B460071ED35 /* XYSelfCenterTableViewController.h */,
+				52DFCA121CD98B460071ED35 /* XYSelfCenterTableViewController.m */,
+			);
+			name = SelfCenter;
 			sourceTree = "<group>";
 		};
 		5ADC2E92D05B05DCD0002CEE /* Pods */ = {
@@ -529,6 +542,7 @@
 				525224821CCDFE940039F9F4 /* main.m in Sources */,
 				525AF0DC1CD0AE8100AA4DE3 /* XYAcceptedExpressDetailViewController.m in Sources */,
 				52D02E1C1CCF084D00C63AF8 /* XYMainTableViewModel.m in Sources */,
+				52DFCA131CD98B460071ED35 /* XYSelfCenterTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

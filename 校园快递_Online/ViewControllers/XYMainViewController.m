@@ -55,20 +55,41 @@
     [_mainTableView.mj_header beginRefreshing];
     
 }
+
+- (IBAction)gotoMyCenter:(id)sender {
+    if (![AVUser currentUser]) {
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
+    }
+    else{
+        self.hidesBottomBarWhenPushed = YES;
+        [self performSegueWithIdentifier:@"gotoMyCenter" sender:self];
+        self.hidesBottomBarWhenPushed = NO;
+    }
+
+    
+    
+    
+    
+}
+
 - (IBAction)latestOrMyacount:(id)sender {
     _isLatest = !_isLatest;
     [_mainTableView.mj_header beginRefreshing];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [_userHeadImageView sd_setImageWithURL:[NSURL URLWithString:[AVUser currentUser][@"headImage"]] placeholderImage:[UIImage imageNamed:@"headPlaceHolder"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         NSLog(@"ERROR is %@",error);
     }];
     _userHeadImageView.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
     
-    [_userNameLabel setText:[AVUser currentUser].username];
+    if ([AVUser currentUser]) {
+        [_userNameLabel setText:[AVUser currentUser].username];
+    }
+    else{
+        [_userNameLabel setText:@"点击登录"];
+    }
     
-//    [_mainTableView.mj_header beginRefreshing];
     [SVProgressHUD showWithStatus:@"刷新中"];
     if (_isLatest) {
         [_tableViewModel getLatestExpressInfoFromServer];
