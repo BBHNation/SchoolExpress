@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @property (weak, nonatomic) IBOutlet UILabel *noticeLabel;
+@property (nonatomic, assign) BOOL isAccepted;
 
 @end
 
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _isAccepted = YES;
     [_noticeLabel setHidden:YES];
     _mainTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self getDataFromServer];
@@ -31,11 +33,29 @@
     _mainTableView.rowHeight = 100;
     _mainTableView.tableFooterView = [UIView new];
     [_mainTableView.mj_header beginRefreshing];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]init];
+    backItem.title = @"";
+    self.navigationItem.backBarButtonItem = backItem;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [_mainTableView.mj_header beginRefreshing];
+}
+
+
+
+
+- (IBAction)changeAccepted:(id)sender {
+    _isAccepted = !_isAccepted;
+    [_mainTableView.mj_header beginRefreshing];
 }
 
 - (void)getDataFromServer{
     AVQuery *query = [AVQuery queryWithClassName:@"LatestExpressList"];
     [query whereKey:@"sendUser" equalTo:[AVUser currentUser]];
+    [query whereKey:@"isAccepted" equalTo:[NSNumber numberWithBool:_isAccepted]];
+    [query whereKey:@"completed" equalTo:[NSNumber numberWithBool:NO]];
     __weak typeof(self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -44,6 +64,8 @@
             [weakSelf.mainTableView reloadData];
             if (weakSelf.tableViewDataArray.count==0) {
                 [weakSelf.noticeLabel setHidden:NO];
+            }else{
+                [weakSelf.noticeLabel setHidden:YES];
             }
         }
         else{
@@ -65,9 +87,6 @@
         [tableView registerNib:[UINib nibWithNibName:@"XYMainTableViewCell" bundle:nil] forCellReuseIdentifier:identifier];
         cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         
-//        cell = [[[NSBundle mainBundle]loadNibNamed:@"XYMainTableViewCell" owner:nil options:nil] firstObject];
-        
-        
     }
     AVObject *item = _tableViewDataArray[indexPath.row];
     [cell setCellItem:item];
@@ -78,8 +97,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    self.hidesBottomBarWhenPushed = YES;
-    [self performSegueWithIdentifier:@"isAccepted" sender:_tableViewDataArray[indexPath.row]];
+    AVObject *item = _tableViewDataArray[indexPath.row];
+    if ([item[@"isAccepted"] boolValue]) {
+        self.hidesBottomBarWhenPushed = YES;
+        [self performSegueWithIdentifier:@"isAccepted" sender:_tableViewDataArray[indexPath.row]];
+    }
+    else{
+        //没被接单进入订单详情
+    }
 }
 
 

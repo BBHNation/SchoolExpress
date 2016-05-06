@@ -55,9 +55,9 @@
      */
     
     
-    if ([_cellItem[@"completed"] boolValue]) {
-        self.contentView.backgroundColor = [UIColor lightGrayColor];
-    }
+//    if ([_cellItem[@"completed"] boolValue]) {
+//        self.contentView.backgroundColor = [UIColor lightGrayColor];
+//    }
 }
 
 @end

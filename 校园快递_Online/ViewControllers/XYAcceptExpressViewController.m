@@ -52,7 +52,7 @@
     if (![AVUser currentUser]) {
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginAndRegister"] animated:YES completion:nil];
     }
-    else if (![[AVUser currentUser][@"certified"] boolValue]) {
+    else if (![[AVUser currentUser][@"isCourier"] boolValue]) {
         [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ToBeCourier"] animated:YES completion:nil];
     }
     else{

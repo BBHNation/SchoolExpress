@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6Q-8c-DMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="759"/>
+            <point key="canvasLocation" x="-394" y="-37"/>
         </scene>
         <!--登录-->
         <scene sceneID="hW4-0o-1Uw">
@@ -155,7 +155,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1762" y="-756"/>
+            <point key="canvasLocation" x="-2602" y="-756"/>
         </scene>
         <!--注册-->
         <scene sceneID="31J-PI-1Pg">
@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="99" width="320" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lnf-TH-U1g" id="LZh-uh-Tvf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="128.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="HhF-AE-7Xd">
@@ -222,7 +222,7 @@
                                         <rect key="frame" x="0.0" y="278" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iyL-7f-5lW" id="ufQ-uE-148">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPB-jk-5dB">
@@ -250,7 +250,7 @@
                                         <rect key="frame" x="0.0" y="322" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Fs-TY-M9d" id="OzE-c1-eWU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-dM-3kg">
@@ -278,7 +278,7 @@
                                         <rect key="frame" x="0.0" y="366" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55u-Pw-tvb" id="mXq-ob-MWU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFX-2E-N43">
@@ -310,7 +310,7 @@
                                         <rect key="frame" x="0.0" y="460" width="320" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qKV-Eq-xKc" id="9Qp-Xw-l2B">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l8-fi-Arz">
@@ -384,7 +384,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1281" y="-756"/>
+            <point key="canvasLocation" x="-2121" y="-756"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zjb-2E-wJg">
@@ -405,7 +405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2Y-u7-Qbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2336" y="-756"/>
+            <point key="canvasLocation" x="-3176" y="-756"/>
         </scene>
         <!--Map-->
         <scene sceneID="KJj-S6-wsL">
@@ -425,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5u5-up-uoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="1799"/>
+            <point key="canvasLocation" x="-394" y="679"/>
         </scene>
         <!--主页-->
         <scene sceneID="iBy-Y2-kzQ">
@@ -576,7 +576,7 @@
                                                 <action selector="latestOrMyacount:" destination="c4f-dx-XB7" eventType="valueChanged" id="aRQ-CS-izj"/>
                                             </connections>
                                         </segmentedControl>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成为速递员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-vM-fyH">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是速递员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-vM-fyH">
                                             <rect key="frame" x="241" y="259" width="60" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -739,14 +739,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y50-bA-Y7p">
-                                                    <rect key="frame" x="15" y="12" width="48" height="20"/>
+                                                    <rect key="frame" x="15" y="12" width="48" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="－－" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gww-5t-COG">
-                                                    <rect key="frame" x="264" y="12" width="41" height="20"/>
+                                                    <rect key="frame" x="273" y="12" width="32" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -828,9 +828,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOa-vS-WO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-756"/>
+            <point key="canvasLocation" x="1176" y="278"/>
         </scene>
-        <!--我的快递-->
+        <!--My Sended Express View Controller-->
         <scene sceneID="uIv-oa-1BH">
             <objects>
                 <viewController id="pxa-Z4-ReG" customClass="XYMySendedExpressViewController" sceneMemberID="viewController">
@@ -867,10 +867,20 @@
                             <constraint firstItem="IPU-e4-y3u" firstAttribute="top" secondItem="aoP-eJ-QfC" secondAttribute="top" id="pE8-uU-dSg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="我的快递" id="xAW-2s-DY9">
-                        <barButtonItem key="rightBarButtonItem" image="Home" id="ydW-Wj-Ffl">
+                    <navigationItem key="navigationItem" id="xAW-2s-DY9">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="nUY-f5-mIR">
+                            <rect key="frame" x="76" y="7" width="168" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="已被接单"/>
+                                <segment title="未被接单"/>
+                            </segments>
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
+                            <connections>
+                                <action selector="changeAccepted:" destination="pxa-Z4-ReG" eventType="valueChanged" id="doG-Rr-QwZ"/>
+                            </connections>
+                        </segmentedControl>
                     </navigationItem>
                     <connections>
                         <outlet property="mainTableView" destination="IPU-e4-y3u" id="9A6-Yq-jqq"/>
@@ -880,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfJ-He-6Bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="-1595"/>
+            <point key="canvasLocation" x="601" y="-2043"/>
         </scene>
         <!--接单人-->
         <scene sceneID="B5d-MF-0LI">
@@ -937,18 +947,18 @@
                                         <rect key="frame" x="0.0" y="259" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oa8-jQ-PNl" id="bp6-Ns-yac">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Yz-Qx-uw7">
-                                                    <rect key="frame" x="15" y="12" width="48" height="20"/>
+                                                    <rect key="frame" x="15" y="12" width="48" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="XXX-XXXX-XXXX" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oLA-ej-xtL">
-                                                    <rect key="frame" x="179" y="12" width="126" height="20"/>
+                                                    <rect key="frame" x="178.5" y="12" width="126.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -965,18 +975,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmh-q3-zRu">
-                                                    <rect key="frame" x="221" y="8" width="91" height="28"/>
+                                                    <rect key="frame" x="238" y="8" width="74" height="28"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="91" id="gVx-Vx-Ejl"/>
+                                                        <constraint firstAttribute="width" constant="74" id="gVx-Vx-Ejl"/>
                                                     </constraints>
                                                     <state key="normal" title="发送短信"/>
+                                                    <connections>
+                                                        <action selector="sendMessage:" destination="Yqp-hT-O1r" eventType="touchUpInside" id="u6G-YE-3Sv"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF7-Y0-fy4">
-                                                    <rect key="frame" x="8" y="7" width="91" height="30"/>
+                                                    <rect key="frame" x="8" y="7" width="72" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="91" id="9kq-WH-URA"/>
+                                                        <constraint firstAttribute="width" constant="72" id="9kq-WH-URA"/>
                                                     </constraints>
                                                     <state key="normal" title="拨打电话"/>
+                                                    <connections>
+                                                        <action selector="call:" destination="Yqp-hT-O1r" eventType="touchUpInside" id="Z5C-kl-RvE"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1153,7 +1169,7 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="sendAction:" destination="0zI-Bw-HzE" eventType="touchUpInside" id="HAF-PK-GS9"/>
+                                                        <action selector="determineToReceive:" destination="Yqp-hT-O1r" eventType="touchUpInside" id="w9N-w5-7C2"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1181,12 +1197,19 @@
                     <size key="freeformSize" width="320" height="829"/>
                     <connections>
                         <outlet property="acceptedUserHeadImage" destination="xU6-2g-p3A" id="KBx-X0-7xf"/>
+                        <outlet property="acceptedUserPhoneNum" destination="oa8-jQ-PNl" id="eCD-o8-Mn0"/>
+                        <outlet property="destination" destination="VW6-cK-j16" id="uqV-zt-IYn"/>
+                        <outlet property="expressCompany" destination="ahi-fM-azH" id="05G-Ze-z0o"/>
                         <outlet property="mainTableView" destination="cY9-YL-JLC" id="XaZ-Z7-p1M"/>
+                        <outlet property="realName" destination="VpA-jw-cTS" id="EX8-Us-g2e"/>
+                        <outlet property="schoolId" destination="rj2-ov-a7j" id="x8z-mY-qo1"/>
+                        <outlet property="startPoint" destination="PjF-xS-m0d" id="Ey6-QO-K4V"/>
+                        <outlet property="userNameLabel" destination="Xzy-aj-trz" id="pPP-NU-sqO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZU-gK-NrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-1783"/>
+            <point key="canvasLocation" x="1086" y="-1959.5"/>
         </scene>
         <!--发送需求-->
         <scene sceneID="ar1-G0-LVE">
@@ -1476,7 +1499,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1680" y="-1452.5"/>
+            <point key="canvasLocation" x="1176" y="-764.5"/>
         </scene>
         <!--需求详情-->
         <scene sceneID="day-fg-97g">
@@ -1814,9 +1837,6 @@
                                                 <constraint firstItem="Rhw-9l-ryE" firstAttribute="centerY" secondItem="JYW-t8-DJK" secondAttribute="centerY" id="wqh-ey-JHq"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="e6x-K8-Tnn" kind="modal" modalPresentationStyle="fullScreen" id="fs7-jK-ngi"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1930,6 +1950,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="sendAction:" destination="0zI-Bw-HzE" eventType="touchUpInside" id="dSm-SE-rsC"/>
+                                                        <action selector="toBeCourier:" destination="Irj-m1-CT5" eventType="touchUpInside" id="bt1-BS-jLo"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1958,10 +1979,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="IDCardid" destination="YLz-ll-hW1" id="wvO-24-5Yy"/>
+                        <outlet property="realName" destination="4WN-mb-xYa" id="SCA-x7-cWd"/>
+                        <outlet property="schoolId" destination="EXL-Xx-vsa" id="IDB-oi-pur"/>
+                        <segue destination="e6x-K8-Tnn" kind="modal" identifier="checkPhoneNum" modalPresentationStyle="fullScreen" id="FCJ-2g-iBh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRe-JL-Cil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="1110"/>
+            <point key="canvasLocation" x="-2705" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jUr-Cc-Z1Z">
@@ -1981,12 +2008,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xw1-LG-BfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="1110"/>
+            <point key="canvasLocation" x="-3164" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cPV-Kn-tKD">
             <objects>
                 <navigationController storyboardIdentifier="CheckPhoneNum" id="e6x-K8-Tnn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q86-Vl-c49"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X6J-j8-L9s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2001,7 +2029,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vv7-kI-bAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="1110"/>
+            <point key="canvasLocation" x="-2298" y="118"/>
         </scene>
         <!--验证手机号-->
         <scene sceneID="Fto-Pa-WFk">
@@ -2150,7 +2178,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2379" y="1110"/>
+            <point key="canvasLocation" x="-1845" y="118"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9MB-p2-UsJ">
